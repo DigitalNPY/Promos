@@ -115,7 +115,58 @@ body {
     right: 0;
     left: 0;
 }
+
+/*====== BANDEAU GLOBAL MOTEUR ======*/
+
+.npy_message{
+    width:100vw;
+    background:#fff;
+    color:#003d7b;
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    background:#fff;
+    box-shadow: 0px 0px 16px rgba(2, 31, 56, 0.49);
+    z-index: 9999999;
 }
+
+.npy_message img{
+    width: 100%;
+    height:auto;
+}
+
+.npy_message span{
+    color:#eb6465;
+    font-weight:bold;
+}
+
+.npy_message .cont_grid7{
+    display: flex;
+    align-items: center;
+}
+
+.npy_message .cont_grid7 div{
+    display:inline-block;
+    padding:20px 40px;
+    width:50%;
+}
+
+
+
+.npy_message a{
+    color:#fff;
+    background:#eb6465;
+    padding:10px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.npy_message a:hover{
+    background:#021f38;
+}
+
+
+/*=====ITEMS====*/
 
 .offer_annul .cont_grid_img img {
     max-width: 100%;
@@ -179,6 +230,20 @@ body {
 .offer_annul .npy_activ_title p {
     margin: 0;
     padding: 0;
+}
+
+
+/*======MEDIA QUERIES====*/
+
+@media screen and (max-width: 1080px) {
+
+        .npy_message .cont_grid3{
+            display: none
+        }
+
+        .npy_message .cont_grid7{
+            width:100%;
+        }
 }
 
 @media screen and (max-width: 900px) {

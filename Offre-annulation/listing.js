@@ -370,7 +370,15 @@ const npySummerProm=[
         pic:'apptchristophed.jpg'
 
     },
+    {
+        nom:'#',
+        type:'Appartement',
+        loc:'#',
+        station:'#',
+        ui:'#',
+        pic:'#'
 
+    },
 
 
 
