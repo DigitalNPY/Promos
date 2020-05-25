@@ -179,15 +179,199 @@ const npySummerProm=[
         pic:'placeholder.jpg'
 
     },
+
+    //Loueurs particuliers
     {
-        nom:'Appartement #',
+        nom:'Arcizettes 2',
         type:'Appartement',
-        loc:'Peyragudes',
-        station:'lpsm',
-        ui:'CA-OPROM-43702-1334',
-        pic:'placeholder.jpg'
+        loc:'Gourette',
+        station:'Gourette',
+        ui:'OSMB-64221-2',
+        pic:'arcizettes.jpg'
 
     },
+    {
+        nom:'Campbielh 2',
+        type:'Appartement',
+        loc:'Piau',
+        station:'Piau',
+        ui:'OSMB-92961-2',
+        pic:'campbielh2.jpg'
+
+    },
+    {
+        nom:'Ramondia 405',
+        type:'Appartement',
+        loc:'Piau',
+        station:'Piau',
+        ui:'#',
+        pic:'ramondia405.jpg'
+
+    },
+    {
+        nom:'Chalet 72',
+        type:'Appartement',
+        loc:'La Pierre St martin',
+        station:'Lpsm',
+        ui:'#',
+        pic:'chalet72.jpg'
+
+    },
+    {
+        nom:'Mongie 1900',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'#',
+        pic:'mongie1900.jpg'
+
+    },
+    {
+        nom:'Neopuvielle',
+        type:'Appartement',
+        loc:'Piau Engaly',
+        station:'Piau',
+        ui:'#',
+        pic:'neouvielle.jpg'
+
+    },
+    {
+        nom:'Pascal S.',
+        type:'Appartement',
+        loc:'Barèges',
+        station:'Tourmalet',
+        ui:'#',
+        pic:'apptpascals.jpg'
+
+    },
+    {
+        nom:'Chateau de Beost',
+        type:'Appartement',
+        loc:'Gourette',
+        station:'Gourette',
+        ui:'#',
+        pic:'chateau_beost.jpg'
+
+    },
+    {
+        nom:'Appartement 5',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'#',
+        pic:'appartement5.jpg'
+
+    },
+    {
+        nom:'Michele S.',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'#',
+        pic:'apptmicheles.jpg'
+
+    },
+     {
+        nom:'Lehailla',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'#',
+        pic:'lehailla.jpg'
+
+    },
+     {
+        nom:'Maison Domer',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'#',
+        pic:'maisondomer.jpg'
+
+    },
+     {
+        nom:'Maison Domer 2',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'#',
+        pic:'maisondomer2.jpg'
+
+    },
+     {
+        nom:'Maison Domer 3',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'#',
+        pic:'maisondomer3.jpg'
+
+    },
+     {
+        nom:'Maison Domer 4',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'#',
+        pic:'maisondomer4.jpg'
+
+    },
+    {
+        nom:'Maison Domer 5',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'#',
+        pic:'maisondomer5.jpg'
+
+    },
+    {
+        nom:'Meublé Domer 1',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'#',
+        pic:'meublé_domer.jpg.jpg'
+
+    },
+    {
+        nom:'Meublé Domer 2',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'#',
+        pic:'meuble_domer2.jpg.jpg'
+
+    },
+    {
+        nom:'Jerome P.',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalett',
+        ui:'#',
+        pic:'apptjeromep.jpg.jpg'
+
+    },
+    {
+        nom:'Chantal D.',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'#',
+        pic:'apptchantald.jpg'
+
+    },
+    {
+        nom:'Christophe D.',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'#',
+        pic:'apptchristophed.jpg'
+
+    },
+
+
 
 
 
