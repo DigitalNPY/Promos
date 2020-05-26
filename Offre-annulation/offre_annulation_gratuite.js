@@ -73,7 +73,7 @@ function filterItemsByResort(choix){
             let res = npyUi.substring(0, 4);
             console.log(res);
             if(res==='OSMB'){
-
+              location.href = `https://www.n-py.com/fr/reservation?_wos=v2%2Cu%2C${npyUi}`;
             
             }
             else{
