@@ -13,15 +13,18 @@ const npyWidgetWrapper = document.querySelector('.widget_resa');
 //Map
 var mymap = L.map('npyMap').setView([43.1731, -1.225], 5);
 
+
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoibnB5c2tpIiwiYSI6ImNrYW54d244dDA4YmsydHFuMzBncHZjOWsifQ.7X-PCXnhqjmCpFrWjbg0Ag'
+    accessToken: 'pk.eyJ1IjoibnB5c2tpIiwiYSI6ImNrYXF4ZG0xZTA0OHozMW1zczNtY3R4YWoifQ.sI3nrGuPRzcU7FmPXXLFkA'
 }).addTo(mymap);
-var markersLayer = []
+
+let markersLayer = [];
+let mapBounds = []
 
 
 //Initialisation
@@ -63,14 +66,12 @@ function filterItemsByResort(choix) {
     for (let i = 0; i < createdItems.length; i++) {
 
 
-        
-
-
         let type = createdItems[i].dataset.type;
         let loc = createdItems[i].dataset.loc;
         let image = createdItems[i].dataset.img;
         let lat = createdItems[i].dataset.lat;
         let lng = createdItems[i].dataset.lng;
+
 
         let itemLocsLieu = `<div class="cont_grid_baseline lieu"><img src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/gps.png"/><b>${loc}</b></div>`;
         let itemLocsType = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/gps.png" /><b>${type}</b></div>`;
@@ -84,7 +85,7 @@ function filterItemsByResort(choix) {
         itemLocs[i].appendChild(itemLocsNodeLieu);
         itemLocs[i].appendChild(itemLocsNodeType);
 
-        createdImages[i].src = 'img/' + image;
+        createdImages[i].src = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image;
 
         if (lat==='0' && lng==='0'){
 
@@ -93,10 +94,16 @@ function filterItemsByResort(choix) {
               let marker = L.marker([lat, lng]).addTo(mymap);
               marker.bindPopup(`<p><img src="img/${image}"></p><p><b>${type}</b><br>${loc}</p><p></p>`);
               markersLayer.push(marker); 
+              mapBounds.push([lat,lng]);
+
             }
         
         
     };
+
+    mymap.invalidateSize();
+    mymap.fitBounds(mapBounds);
+
 
     createdItems.forEach(element => element.addEventListener("click", function (e) {
         npyWidgetWrapper.innerHTML = '';
