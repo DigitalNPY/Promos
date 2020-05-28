@@ -5,7 +5,9 @@ const npySummerProm=[
         loc:'Ledeuix',
         station:'Lpsm',
         ui:'OSCH-72613',
-        pic:'maison-orride.jpg'
+        pic:'maison-orride.jpg',
+        lat:43.242881, 
+        lng:-0.607716
 
     },
     {
@@ -14,7 +16,9 @@ const npySummerProm=[
         loc:'Peyragudes',
         station:'Peyragudes',
         ui:'OSMB-64622',
-        pic:'placeholder.jpg'
+        pic:'placeholder.jpg',
+        lat:42.794963,
+        lng:0.443261
 
     },
     {
@@ -23,16 +27,20 @@ const npySummerProm=[
         loc:'Peyragudes',
         station:'Peyragudes',
         ui:'MARK-42660',
-        pic:'maison_de_peyragudes.jpg'
+        pic:'maison_de_peyragudes.jpg',
+        lat:0,
+        lng:0,
 
     },
     {
         nom:'Agence pic du midi',
         type:'Appartements',
-        loc:'Peyragudes',
+        loc:'La Mongie',
         station:'Tourmalet',
         ui:'ZEPH-64477',
-        pic:'agence_picdumidi.jpg'
+        pic:'agence_picdumidi.jpg',
+        lat:0,
+        lng:0,
 
     },
     {
@@ -41,7 +49,9 @@ const npySummerProm=[
         loc:'B. de Bigorre',
         station:'Tourmalet',
         ui:'AVAI-39677',
-        pic:'domaine-ramonjuan.jpg'
+        pic:'domaine-ramonjuan.jpg',
+        lat:42.988780,
+        lng:0.109380,
 
     },
     {
@@ -50,7 +60,10 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'AVAI-43796',
-        pic:'meretgolf-pic.jpg'
+        pic:'meretgolf-pic.jpg',
+        lat:42.910431,
+        lng:0.171008
+
 
     },
     {
@@ -59,25 +72,31 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'AVAI-43794',
-        pic:'meretgolf-tourmalet.jpg'
+        pic:'meretgolf-tourmalet.jpg',
+        lat:42.911829,
+        lng:0.174001
 
     },
     {
         nom:'Résidence Richelieu',
         type:'Appartements',
-        loc:'Peyragudes',
-        station:'lpsm',
+        loc:'La Pierre St Martin',
+        station:'Lpsm',
         ui:'OSMB-35536',
-        pic:'residence_richelieu.jpg'
+        pic:'residence_richelieu.jpg',
+        lat:0,
+        lng:0,
 
     },
     {
         nom:'Résidence Gascogne',
         type:'Appartements',
-        loc:'Peyragudes',
-        station:'lpsm',
-        ui:'OSMB-108746',
-        pic:'residence_gascogne.jpg'
+        loc:'Gourette',
+        station:'Gourette',
+        ui:'OSMB-108746-1',
+        pic:'residence_gascogne.jpg',
+        lat:42.970744,
+        lng:-0.390991
 
     },
     {
@@ -86,7 +105,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'HRIT-35250',
-        pic:'hotel-boisjoli.jpg'
+        pic:'hotel-boisjoli.jpg',
+        lat:42.888554,
+        lng:-0.113872,
 
     },
     {
@@ -95,7 +116,9 @@ const npySummerProm=[
         loc:'B. de Bigorre',
         station:'Tourmalet',
         ui:'AVAI-47066',
-        pic:'hotel-carrepy.jpg'
+        pic:'hotel-carrepy.jpg',
+        lat:43.055462,
+        lng: 0.157509,
 
     },
     {
@@ -104,7 +127,9 @@ const npySummerProm=[
         loc:'Sazos',
         station:'Luz-Ardiden',
         ui:'OSCH-48058',
-        pic:'gite_la_maisonnee.jpg'
+        pic:'gite_la_maisonnee.jpg',
+        lat:42.884124,
+        lng: -0.025394,
 
     },
     {
@@ -113,7 +138,9 @@ const npySummerProm=[
         loc:'Gerde',
         station:'Tourmalet',
         ui:'OSCA-40376',
-        pic:'camping_adour.jpg'
+        pic:'camping_adour.jpg',
+        lat:43.052779,
+        lng: 0.159368,
 
     },
     {
@@ -122,7 +149,9 @@ const npySummerProm=[
         loc:'Agos Vidalos',
         station:'Luz',
         ui:'CVERT-36125',
-        pic:'camping-pibeste.jpg'
+        pic:'camping-pibeste.jpg',
+        lat:43.035626, 
+        lng:-0.070879,
 
     },
     {
@@ -131,7 +160,9 @@ const npySummerProm=[
         loc:'Piau Engaly',
         station:'Piau',
         ui:'NOVH-47375',
-        pic:'hotel-4ours.jpg'
+        pic:'hotel-4ours.jpg',
+        lat:42.783880, 
+        lng:0.159078,
 
     },
     {
@@ -140,7 +171,9 @@ const npySummerProm=[
         loc:'Montory',
         station:'Lpsm',
         ui:'HRIT-29997',
-        pic:'auberge-etable.jpg'
+        pic:'auberge-etable.jpg',
+        lat:43.098069,
+        lng:-0.817631,
 
     },
     {
@@ -149,7 +182,9 @@ const npySummerProm=[
         loc:'Gourette',
         station:'Gourette',
         ui:'HRES-36724',
-        pic:'agence_barroso.jpg'
+        pic:'agence_barroso.jpg',
+        lat:0,
+        lng:0,
 
     },
     {
@@ -158,7 +193,9 @@ const npySummerProm=[
         loc:'Peyragudes',
         station:'Peyragudes',
         ui:'OSMB-43060',
-        pic:'residence_adrets.jpg'
+        pic:'residence_adrets.jpg',
+        lat:42.796258,
+        lng:0.438932,
 
     },
     {
@@ -167,7 +204,9 @@ const npySummerProm=[
         loc:'Peyragudes',
         station:'Peyragudes',
         ui:'OSMB-109565',
-        pic:'appart_toit.jpg'
+        pic:'appart_toit.jpg',
+        lat:0,
+        lng:0,
 
     },
     {
@@ -176,18 +215,12 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-109565',
-        pic:'placeholder.jpg'
+        pic:'placeholder.jpg',
+        lat:0,
+        lng:0,
 
     },
-    {
-        nom:'Sélection Loueurs Particuliers',
-        type:'Appartement',
-        loc:'Peyragudes',
-        station:'lpsm',
-        ui:'CA-OPROM-43702-1334',
-        pic:'placeholder.jpg'
-
-    },
+    
 
     //Loueurs particuliers
     {
@@ -196,7 +229,9 @@ const npySummerProm=[
         loc:'Gourette',
         station:'Gourette',
         ui:'OSMB-64221-2',
-        pic:'arcizettes.jpg'
+        pic:'arcizettes.jpg',
+        lat:42.958021,
+        lng:-0.333110,
 
     },
     {
@@ -205,7 +240,9 @@ const npySummerProm=[
         loc:'Piau',
         station:'Piau',
         ui:'OSMB-92961-2',
-        pic:'campbielh2.jpg'
+        pic:'campbielh2.jpg',
+        lat:42.784206, 
+        lng:0.159462,
 
     },
     {
@@ -214,7 +251,9 @@ const npySummerProm=[
         loc:'Piau',
         station:'Piau',
         ui:'OSMB-39493-1',
-        pic:'ramondia405.jpg'
+        pic:'ramondia405.jpg',
+        lat:42.783694,
+        lng: 0.161321,
 
     },
     {
@@ -223,7 +262,9 @@ const npySummerProm=[
         loc:'La Pierre St martin',
         station:'Lpsm',
         ui:'OSMB-70818-1',
-        pic:'chalet72.jpg'
+        pic:'chalet72.jpg',
+        lat:42.977093, 
+        lng:-0.742837,
 
     },
     {
@@ -232,7 +273,9 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'OSMB-93431-1',
-        pic:'mongie1900.jpg'
+        pic:'mongie1900.jpg',
+        lat:42.911939,
+        lng:0.176423,
 
     },
     {
@@ -241,7 +284,9 @@ const npySummerProm=[
         loc:'Piau Engaly',
         station:'Piau',
         ui:'OSMB-39476-6',
-        pic:'neouvielle.jpg'
+        pic:'neouvielle.jpg',
+        lat:42.785044, 
+        lng:0.158978,
 
     },
     {
@@ -250,8 +295,9 @@ const npySummerProm=[
         loc:'Barèges',
         station:'Tourmalet',
         ui:'OSMB-93370-1',
-        pic:'apptpascals.jpg'
-
+        pic:'apptpascals.jpg',
+        lat:42.895196, 
+        lng:0.061583,
     },
     {
         nom:'Chateau de Beost',
@@ -259,8 +305,9 @@ const npySummerProm=[
         loc:'Gourette',
         station:'Gourette',
         ui:'OSMB-71493-1',
-        pic:'chateau_beost.jpg'
-
+        pic:'chateau_beost.jpg',
+        lat:42.993772,
+        lng:-0.415816,
     },
     {
         nom:'Appartement 5',
@@ -268,8 +315,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-92162-1',
-        pic:'appartement5.jpg'
-
+        pic:'appartement5.jpg',
+        lat:42.891183, 
+        lng:-0.117219,
     },
     {
         nom:'Michele S.',
@@ -277,8 +325,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35623-6',
-        pic:'apptmicheles.jpg'
-
+        pic:'apptmicheles.jpg',
+        lat:42.885210,
+        lng: -0.111638,
     },
     {
         nom:'La Mongie 1800',
@@ -286,8 +335,9 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'OSMB-47648-1',
-        pic:'mongie1800.jpg'
-
+        pic:'mongie1800.jpg',
+        lat:42.911990, 
+        lng:0.176604,
     },
      {
         nom:'Lehailla',
@@ -295,8 +345,9 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'OSMB-40211-1',
-        pic:'lehailla.jpg'
-
+        pic:'lehailla.jpg',
+        lat:43.112639, 
+        lng:0.203907,
     },
      {
         nom:'Maison Domer',
@@ -304,8 +355,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-9',
-        pic:'maisondomer.jpg'
-
+        pic:'maisondomer.jpg',
+        lat:42.886800, 
+        lng:-0.113727,
     },
      {
         nom:'Maison Domer 2',
@@ -313,8 +365,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-6',
-        pic:'maisondomer2.jpg'
-
+        pic:'maisondomer2.jpg',
+        lat:42.886800, 
+        lng:-0.113728,
     },
      {
         nom:'Maison Domer 3',
@@ -322,8 +375,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-7',
-        pic:'maisondomer3.jpg'
-
+        pic:'maisondomer3.jpg',
+        lat:42.886800, 
+        lng:-0.113729,
     },
      {
         nom:'Maison Domer 4',
@@ -331,8 +385,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-10',
-        pic:'maisondomer4.jpg'
-
+        pic:'maisondomer4.jpg',
+        lat:42.886800, 
+        lng:-0.113730,
     },
     {
         nom:'Maison Domer 5',
@@ -340,8 +395,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-8',
-        pic:'maisondomer5.jpg'
-
+        pic:'maisondomer5.jpg',
+        lat:42.886800, 
+        lng:-0.113731,
     },
     {
         nom:'Meublé Domer 1',
@@ -349,7 +405,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-4',
-        pic:'meuble_domer.jpg'
+        pic:'meuble_domer.jpg',
+        lat:42.886800, 
+        lng:-0.113732,
     },
     {
         nom:'Meublé Domer 2',
@@ -357,8 +415,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-1',
-        pic:'meuble_domer2.jpg'
-
+        pic:'meuble_domer2.jpg',
+        lat:42.886800, 
+        lng:-0.113733,
     },
     {
         nom:'Jerome P.',
@@ -366,8 +425,9 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalett',
         ui:'OSMB-64018-1',
-        pic:'apptjeromep.jpg'
-
+        pic:'apptjeromep.jpg',
+        lat:43.063839,
+        lng: 0.146531,
     },
     {
         nom:'Chantal D.',
@@ -375,8 +435,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35677-1',
-        pic:'apptchantald.jpg'
-
+        pic:'apptchantald.jpg',
+        lat:42.887050,
+        lng:-0.113088,
     },
     {
         nom:'Christophe D.',
@@ -384,8 +445,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-63759-1',
-        pic:'apptchristophed.jpg'
-
+        pic:'apptchristophed.jpg',
+        lat:42.887409, 
+        lng:-0.113220,
     },
     {
         nom:'Residence Le Mahourat',
@@ -393,8 +455,9 @@ const npySummerProm=[
         loc:'La Pierre St Martin',
         station:'Lpsm',
         ui:'OSMB-59764-1',
-        pic:'residence_le_mahourat.jpg'
-
+        pic:'residence_le_mahourat.jpg',
+        lat:42.977506,
+        lng:-0.744980,
     },
     {
         nom:'Val Soleil',
@@ -402,8 +465,9 @@ const npySummerProm=[
         loc:'Gourette',
         station:'Gourette',
         ui:'OSMB-64414-1',
-        pic:'val_soleil.jpg'
-
+        pic:'val_soleil.jpg',
+        lat:42.959073,
+        lng:-0.332202,
     },
     {
         nom:'Helios',
@@ -411,8 +475,9 @@ const npySummerProm=[
         loc:'Barèges',
         station:'Tourmalet',
         ui:'OSMB-47242-1',
-        pic:'helios.jpg'
-
+        pic:'helios.jpg',
+        lat:42.896153,
+        lng:0.061040,
     },
     {
         nom:'Gîte Campan',
@@ -420,8 +485,9 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'OSMB-93179-1',
-        pic:'gite_campan.jpg'
-
+        pic:'gite_campan.jpg',
+        lat:43.007599,
+        lng:0.187871,
     },
     {
         nom:'Les Myrtilles',
@@ -429,8 +495,9 @@ const npySummerProm=[
         loc:'La Pierre St Martin',
         station:'Lpsm',
         ui:'OSMB-99541-1',
-        pic:'lesmyrtilles.jpg'
-
+        pic:'lesmyrtilles.jpg',
+        lat:42.977653, 
+        lng:-0.744662,
     },
     {
         nom:'Chalet de montagne',
@@ -438,8 +505,9 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'OSMB-102481-1',
-        pic:'chalet_de_montagnes.jpg'
-
+        pic:'chalet_de_montagnes.jpg',
+        lat:42.966249, 
+        lng:0.229813,
     },
     {
         nom:'Studio Cauterets',
@@ -447,8 +515,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-68297-3',
-        pic:'studio_cauterets.jpg'
-
+        pic:'studio_cauterets.jpg',
+        lat:42.888686, 
+        lng:-0.113489,
     },
     {
         nom:'Club 2',
@@ -456,8 +525,9 @@ const npySummerProm=[
         loc:'Piau Engaly',
         station:'Piau',
         ui:'OSMB-65885-1',
-        pic:'clubII_n52.jpg'
-
+        pic:'clubII_n52.jpg',
+        lat:42.783268, 
+        lng:0.159856,
     },
     {
         nom:'Mongie Tourmalet',
@@ -465,8 +535,9 @@ const npySummerProm=[
         loc:'La Mongiee',
         station:'Tourmalet',
         ui:'OSMB-63857-1',
-        pic:'mongietourmalet.jpg'
-
+        pic:'mongietourmalet.jpg',
+        lat:42.909237, 
+        lng:0.167143,
     },
     {
         nom:'Résidence Anglas',
@@ -474,8 +545,9 @@ const npySummerProm=[
         loc:'Gourette',
         station:'Gourette',
         ui:'OSMB-65564-1',
-        pic:'residence_anglas.jpg'
-
+        pic:'residence_anglas.jpg',
+        lat:42.958202, 
+        lng:-0.333473,
     },
     {
         nom:'Bero Bisto',
@@ -483,8 +555,9 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'OSMB-64735-1',
-        pic:'bero_bisto_n7.jpg'
-
+        pic:'bero_bisto_n7.jpg',
+        lat:42.910905, 
+        lng:0.174210,
     },
     {
         nom:'Myrtilles 1',
@@ -492,8 +565,9 @@ const npySummerProm=[
         loc:'Piau Engaly',
         station:'Piau',
         ui:'OSMB-64985-1',
-        pic:'myrtilles1.jpg'
-
+        pic:'myrtilles1.jpg',
+        lat:42.782992,
+        lng: 0.159415,
     },
     {
         nom:'Myrtilles 2',
@@ -501,8 +575,9 @@ const npySummerProm=[
         loc:'Piau Engaly',
         station:'Piau',
         ui:'OSMB-64985-2',
-        pic:'myrtilles1_surpistes.jpg'
-
+        pic:'myrtilles1_surpistes.jpg',
+        lat:42.782992,
+        lng: 0.159415,
     },
     {
         nom:'Myrtilles 3',
@@ -510,8 +585,9 @@ const npySummerProm=[
         loc:'Piau Engaly',
         station:'Piau',
         ui:'OSMB-64985-3',
-        pic:'myrtilles1_surpistes.jpg'
-
+        pic:'myrtilles1_surpistes.jpg',
+        lat:42.782992,
+        lng: 0.159415,
     },
     {
         nom:'Appartement centre-ville',
@@ -519,8 +595,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-47776-1',
-        pic:'appt_centreville.jpg'
-
+        pic:'appt_centreville.jpg',
+        lat:42.887581, 
+        lng:-0.113632,
     },
     {
         nom:'La bergerie',
@@ -528,8 +605,9 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'OSMB-92299-1',
-        pic:'la_bergerie.jpg'
-
+        pic:'la_bergerie.jpg',
+        lat:43.101881, 
+        lng:0.075124,
     },
     {
         nom:'Bois de Marie',
@@ -537,8 +615,9 @@ const npySummerProm=[
         loc:'Barèges',
         station:'Tourmalet',
         ui:'OSMB-63637-1',
-        pic:'bois_de_marie.jpg'
-
+        pic:'bois_de_marie.jpg',
+        lat:42.898234, 
+        lng:0.067935,
     },
     {
         nom:'Eric & Marie D.',
@@ -546,8 +625,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-90291-1',
-        pic:'appt_ericmaried.jpg'
-
+        pic:'appt_ericmaried.jpg',
+        lat:42.889746, 
+        lng:-0.115991,
     },
     {
         nom:'La Mongie 1900',
@@ -555,8 +635,9 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'OSMB-108617-1',
-        pic:'lamongie_1900-2.jpg'
-
+        pic:'lamongie_1900-2.jpg',
+        lat:42.912008, 
+        lng:0.176309,
     },
     {
         nom:'Balcons de Barèges',
@@ -564,8 +645,9 @@ const npySummerProm=[
         loc:'Barèges',
         station:'Tourmalet',
         ui:'OSMB-63024-1',
-        pic:'balcons_bareges.jpg'
-
+        pic:'balcons_bareges.jpg',
+        lat:42.895490,
+        lng:0.061768,
     },
     {
         nom:'Oursons 1',
@@ -573,8 +655,9 @@ const npySummerProm=[
         loc:'La Pierre St Martin',
         station:'Lpsm',
         ui:'OSMB-43309-1',
-        pic:'lesoursons1_appt203.jpg'
-
+        pic:'lesoursons1_appt203.jpg',
+        lat:42.978476, 
+        lng:-0.745650,
     },
     {
         nom:'Oursons 2',
@@ -582,8 +665,9 @@ const npySummerProm=[
          loc:'La Pierre St Martin',
         station:'Lpsm',
         ui:'OSMB-43309-6',
-        pic:'lesoursons1_appt206.jpg'
-
+        pic:'lesoursons1_appt206.jpg',
+        lat:42.978476, 
+        lng:-0.745651,
     },
     {
         nom:'Myrtilles 2',
@@ -591,8 +675,9 @@ const npySummerProm=[
         loc:'La Pierre St Martin',
         station:'Lpsm',
         ui:'OSMB-43324-1',
-        pic:'lesmyrtilles_2.jpg'
-
+        pic:'lesmyrtilles_2.jpg',
+        lat:42.976699, 
+        lng:-0.744734,
     },
     {
         nom:'Estrelias',
@@ -600,8 +685,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-101074-1',
-        pic:'maisondevacs_estrelias.jpg'
-
+        pic:'maisondevacs_estrelias.jpg',
+        lat:42.893193, 
+        lng:-0.117409,
     },
     {
         nom:'Le Martin pêcheur',
@@ -609,44 +695,49 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'OSMB-43754-1',
-        pic:'studio_lemartinpecheur.jpg'
-
+        pic:'studio_lemartinpecheur.jpg',
+        lat:43.065583, 
+        lng:0.151460,
     },
     {
         nom:'Palmiers des vignaux 1',
         type:'Appartement',
-        loc:'La Mongie',
+        loc:'B. de Bigorre',
         station:'Tourmalet',
         ui:'OSMB-43754-2',
-        pic:'lespalmiersdesvignaux.jpg'
-
+        pic:'lespalmiersdesvignaux.jpg',
+        lat:43.066703,
+        lng: 0.148256,
     },
     {
         nom:'Palmiers des vignaux 2',
         type:'Appartement',
-        loc:'La Mongie',
+        loc:'B. de Bigorre',
         station:'Tourmalet',
         ui:'OSMB-43754-3',
-        pic:'lespalmiersdesvignaux2.jpg'
-
+        pic:'lespalmiersdesvignaux2.jpg',
+        lat:43.066632, 
+        lng:0.148260,
     },
     {
         nom:'Palmiers des vignaux 3',
         type:'Appartement',
-        loc:'La Mongie',
+        loc:'B. de Bigorre',
         station:'Tourmalet',
         ui:'OSMB-43754-4',
-        pic:'lespalmiersdesvignaux3.jpg'
-
+        pic:'lespalmiersdesvignaux3.jpg',
+        lat:43.066671, 
+        lng:0.148209,
     },
     {
         nom:'Palmiers des vignaux 4',
         type:'Appartement',
-        loc:'La Mongie',
+        loc:'B. de Bigorre',
         station:'Tourmalet',
         ui:'OSMB-43754-5',
-        pic:'lespalmiersdesvignaux4.jpg'
-
+        pic:'lespalmiersdesvignaux4.jpg',
+        lat:43.066650, 
+        lng:0.148279,
     },
     {
         nom:'Le Lapiaz',
@@ -654,8 +745,9 @@ const npySummerProm=[
         loc:'La Pierre St Martin',
         station:'Lpsm',
         ui:'OSMB-43314-1',
-        pic:'chalet_le_lapiaz.jpg'
-
+        pic:'chalet_le_lapiaz.jpg',
+        lat:42.977733, 
+        lng:-0.742571,
     },
     {
         nom:'Myrtilles 3',
@@ -663,8 +755,9 @@ const npySummerProm=[
         loc:'La Pierre St Martin',
         station:'Lpsm',
         ui:'OSMB-47100-1',
-        pic:'lesmyrtilles_3.jpg'
-
+        pic:'lesmyrtilles_3.jpg',
+        lat:42.976736,
+        lng: -0.744646,
     },
     {
         nom:'Myrtilles 4',
@@ -672,8 +765,9 @@ const npySummerProm=[
         loc:'La Pierre St Martin',
         station:'Lpsm',
         ui:'OSMB-47100-2',
-        pic:'lesmyrtilles_4.jpg'
-
+        pic:'lesmyrtilles_4.jpg',
+        lat:42.976657, 
+        lng:-0.744637,
     },
     {
         nom:'Studio',
@@ -681,8 +775,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-71074-1',
-        pic:'studio_lafuentejc.jpg'
-
+        pic:'studio_lafuentejc.jpg',
+        lat:42.891287, 
+        lng:-0.113549,
     },
     {
         nom:'Oursons 2',
@@ -690,17 +785,19 @@ const npySummerProm=[
         loc:'La Pierre St Martin',
         station:'Lpsm',
         ui:'OSMB-47594-1',
-        pic:'lesoursonsII.jpg'
-
+        pic:'lesoursonsII.jpg',
+        lat:42.977578, 
+        lng:-0.744298,
     },
     {
         nom:'Gîte Lascurettes',
         type:'Gîte',
-        loc:'Gourette',
+        loc:'Beost',
         station:'Gourette',
         ui:'OSMB-92421-1',
-        pic:'gite_lascurette.jpg'
-
+        pic:'gite_lascurette.jpg',
+        lat:0,
+        lng:0,
     },
     {
         nom:'Jean Michel C.',
@@ -708,8 +805,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-67557-1',
-        pic:'studio_jeanmichelc.jpg'
-
+        pic:'studio_jeanmichelc.jpg',
+        lat:42.890723, 
+        lng:-0.113322,
     },
     {
         nom:'Plein Soleil',
@@ -717,8 +815,9 @@ const npySummerProm=[
         loc:'La Pierre St Martin',
         station:'Lpsm',
         ui:'OSMB-100218-1',
-        pic:'plein_soleil.jpg'
-
+        pic:'plein_soleil.jpg',
+        lat:42.977303, 
+        lng:-0.745014,
     },
     {
         nom:'Club Engaly 2',
@@ -726,8 +825,9 @@ const npySummerProm=[
         loc:'Piau Engaly',
         station:'Piau',
         ui:'OSMB-63933-1',
-        pic:'club_engalyII_n61.jpg'
-
+        pic:'club_engalyII_n61.jpg',
+        lat:42.783313, 
+        lng:0.159846,
     },
     {
         nom:'Appartement cosy',
@@ -735,26 +835,29 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-73884-1',
-        pic:'appt_cosy_ctrville.jpg'
-
+        pic:'appt_cosy_ctrville.jpg',
+        lat:42.887634, 
+        lng:-0.113883,
     },
     {
-        nom:'Appartement Mongie Tourmalet',
+        nom:'Appartement Mongie Tourmalet 1',
         type:'Appartement',
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'OSMB-40205-1',
-        pic:'residence_mongietourmalet.jpg'
-
+        pic:'residence_mongietourmalet.jpg',
+        lat:42.908876, 
+        lng:0.166634,
     },
     {
-        nom:'Appartement Mongie Tourmalet',
+        nom:'Appartement Mongie Tourmalet 2',
         type:'Appartement',
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'OSMB-40205-2',
-        pic:'residence_mongietourmalet2.jpg'
-
+        pic:'residence_mongietourmalet2.jpg',
+        lat:42.908865, 
+        lng:0.166662,
     },
     {
         nom:'Port Engaly 2',
@@ -762,8 +865,9 @@ const npySummerProm=[
         loc:'Piau Engaly',
         station:'Piau',
         ui:'OSMB-47485-1',
-        pic:'port_engaly2.jpg'
-
+        pic:'port_engaly2.jpg',
+        lat:42.784620, 
+        lng:0.157075,
     },
     {
         nom:'Maison de Pierres',
@@ -771,8 +875,9 @@ const npySummerProm=[
         loc:'Peyragudes',
         station:'Peyragudes',
         ui:'OSMB-68287-1',
-        pic:'maison_pierres.jpg'
-
+        pic:'maison_pierres.jpg',
+        lat:42.812604, 
+        lng:0.496831,
     },
     {
         nom:'Panoramic',
@@ -780,17 +885,19 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'OSMB-65727-1',
-        pic:'panoramic.jpg'
-
+        pic:'panoramic.jpg',
+        lat:0,
+        lng:0,
     },
     {
         nom:'Escargot Bleu',
         type:'Gîte',
-        loc:'La Pierre St Martin',
+        loc:'Oloron Ste Marie',
         station:'Lpsm',
         ui:'OSMB-109227-1',
-        pic:'gite_escargot_bleu.jpg'
-
+        pic:'gite_escargot_bleu.jpg',
+        lat:43.180004,
+        lng: -0.640976,
     },
     {
         nom:'Appartement Le Serias',
@@ -798,8 +905,9 @@ const npySummerProm=[
         loc:'Peyragudes',
         station:'Peyragudes',
         ui:'OSMB-109209-1',
-        pic:'residence_le_serias.jpg'
-
+        pic:'residence_le_serias.jpg',
+        lat:42.791178,
+        lng: 0.446940,
     },
     {
         nom:'Montana N314',
@@ -807,8 +915,9 @@ const npySummerProm=[
         loc:'La Mongie',
         station:'La Mongie',
         ui:'OSMB-92755-2',
-        pic:'montana_n314.jpg'
-
+        pic:'montana_n314.jpg',
+        lat:42.908839, 
+        lng:0.167116,
     },
     {
         nom:'Appartement Pied télécabine',
@@ -816,8 +925,9 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-71188-2',
-        pic:'appartementt2_piedtelecabine.jpg'
-
+        pic:'appartementt2_piedtelecabine.jpg',
+        lat:42.890889, 
+        lng:-0.113267,
     },
     {
         nom:'Résidence Les Myrtilles',
@@ -825,8 +935,9 @@ const npySummerProm=[
         loc:'La Pierre St Martin',
         station:'Lpsm',
         ui:'OSMB-63259-1',
-        pic:'residence_lesmyrtilles.jpg'
-
+        pic:'residence_lesmyrtilles.jpg',
+        lat:42.976688,
+        lng:-0.744646,
     },
 
 
