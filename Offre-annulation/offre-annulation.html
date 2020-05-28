@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 
@@ -21,38 +23,40 @@
         <div class="page-content-npy">
             <section class="cont_row npy_offerHeader">
                 <div class="durationWrapper desktop">
-                    <div class="durationSelector" data-resort="Cauterets">Cauterets</div>
-                    <div class="durationSelector" data-resort="Gourette">Gourette</div>
-                    <div class="durationSelector" data-resort="Lpsm">La Pierre<br>St Martin</div>
-                    <div class="durationSelector" data-resort="Luz">Luz-Ardiden</div>
-                    <div class="durationSelector" data-resort="Tourmalet">Grand Tourmalet</div>
-                    <div class="durationSelector" data-resort="Peyragudes">Peyragudes</div>
-                    <div class="durationSelector" data-resort="Piau">Piau Engaly</div>
+                    <div class="durationSelector" data-lat="42.888562" data-long="-0.114409" data-resort="all">Tous</div>
+                    <div class="durationSelector" data-lat="42.888562" data-long="-0.114409" data-resort="Cauterets">Cauterets</div>
+                    <div class="durationSelector" data-lat="42.958567" data-long="-0.332481" data-resort="Gourette">Gourette</div>
+                    <div class="durationSelector" data-lat="42.977999" data-long="-0.746738" data-resort="Lpsm">La Pierre<br>St Martin</div>
+                    <div class="durationSelector" data-lat="42.872644" data-long="-0.003282" data-resort="Luz">Luz-Ardiden</div>
+                    <div class="durationSelector" data-lat="42.910216" data-long="0.176709" data-resort="Tourmalet">Grand Tourmalet</div>
+                    <div class="durationSelector" data-lat="42.783545" data-long="0.461315" data-resort="Peyragudes">Peyragudes</div>
+                    <div class="durationSelector" data-lat="42.783513" data-long="0.159022" data-resort="Piau">Piau Engaly</div>
                 </div>
                 <div class="durationWrapper mobile">
                     <div class="durationCurrent" tabindex="1">
-                        <div class="durationSelector" data-resort="Piau"><input class="durationInput" type="radio" id="0" value="1" name="Ben" checked="checked" />
-                            <p class="durationInputText">Piau Engaly</p>
-                        </div>
-                        <div class="durationSelector" data-resort="Cauterets"><input class="durationInput" type="radio" id="1" value="2" name="Ben" checked="checked" />
+                        
+                        <div class="durationSelector" data-lat="42.888562" data-long="-0.114409" data-resort="Cauterets"><input class="durationInput" type="radio"  checked="checked" />
                             <p class="durationInputText">Cauterets</p>
                         </div>
-                        <div class="durationSelector" data-resort="Gourette"><input class="durationInput" type="radio" id="2" value="3" name="Ben" checked="checked" />
+                        <div class="durationSelector" data-lat="42.958567" data-long="-0.332481" data-resort="Gourette"><input class="durationInput" type="radio"  checked="checked" />
                             <p class="durationInputText">Gourette</p>
                         </div>
-                        <div class="durationSelector" data-resort="Lpsm"><input class="durationInput" type="radio" id="3" value="4" name="Ben" checked="checked" />
+                        <div class="durationSelector" data-lat="42.977999" data-long="-0.746738" data-resort="Lpsm"><input class="durationInput" type="radio"  checked="checked" />
                             <p class="durationInputText">La Pierre Saint-Martin</p>
                         </div>
-                        <div class="durationSelector" data-resort="Luz"><input class="durationInput" type="radio" id="4" value="5" name="Ben" checked="checked" />
+                        <div class="durationSelector" data-lat="42.872644" data-long="-0.003282"  data-resort="Luz"><input class="durationInput" type="radio"  checked="checked" />
                             <p class="durationInputText">Luz Ardiden</p>
                         </div>
-                        <div class="durationSelector" data-resort="Tourmalet"><input class="durationInput" type="radio" id="5" value="6" name="Ben" checked="checked" />
+                        <div class="durationSelector" data-lat="42.910216" data-long="0.176709" data-resort="Tourmalet"><input class="durationInput" type="radio"  checked="checked" />
                             <p class="durationInputText">Grand Tourmalet</p>
                         </div>
-                        <div class="durationSelector" data-resort="Peyragudes"><input class="durationInput" type="radio" id="6" value="7" name="Ben" checked="checked" />
+                        <div class="durationSelector" data-lat="42.783545" data-long="0.461315" data-resort="Peyragudes"><input class="durationInput" type="radio"  checked="checked" />
                             <p class="durationInputText">Peyragudes</p>
                         </div>
-                        <div class="durationSelector" data-resort="Tous"><input class="durationInput" type="radio" id="7" value="8" name="Ben" checked="checked" />
+                        <div class="durationSelector" data-lat="#" data-long="-#" data-resort="Piau"><input class="durationInput" type="radio"  checked="checked" />
+                            <p class="durationInputText">Piau Engaly</p>
+                        </div>
+                        <div class="durationSelector" data-lat="42.783513" data-long="0.159022" data-resort="all"><input class="durationInput" type="radio"  checked="checked" />
                             <p class="durationInputText">Toutes les stations</p>
                         </div>
                         <img class="durationIcon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true" />
@@ -75,13 +79,12 @@
         <div class="page-content-npy">
             <section class="cont_row grille12col">
                 <div class="cont_grid4 npy_map">
-                    <iframe id="map" width="100%" height="800px" frameborder="0" allowfullscreen src="https://umap.openstreetmap.fr/fr/map/carte-sans-nom_461347?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
+                    <div id="npyMap"></div>
                 </div>
-                <div class="cont_grid8">
-                    <section class="cont_row offer_annul">
-                        <div class="cont_wrapper promo">
-                        </div>
-                    </section>
+                <!-- delete div.cont_wrapper.promo
+                     delete section.cont_row.offer_annul
+                     change from div.cont_grid8 to div.cont_grid8.offer_annul -->
+                <div class="cont_grid8 offer_annul">
                 </div>
             </section>
         </div>
@@ -92,6 +95,12 @@
             </section>
         </div>
     </div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
     <script type="text/javascript" src="https://gadget.open-system.fr/widgets-libs/rel/noyau-1.0.min.js"></script>
     <script src="listing.js"></script>
     <script src="offre_annulation_gratuite.js"></script>

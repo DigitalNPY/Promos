@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Lato', sans-serif;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
     --red: #fb236a;
     --blue: #003d7b;
+    --salmon:#ff6f5d;
     --grey: #dceaf9;
     --black: #242424;
     --green: #1bc74e;
@@ -52,13 +64,13 @@ body {
 }
 
 .durationSelector:hover {
-    color: var(--green);
+    color: var(--salmon);
     font-weight: 900;
 }
 
 .active {
-    color: var(--green);
-    border-bottom: 12px solid var(--green);
+    color: var(--salmon);
+    border-bottom: 12px solid var(--salmon);
 }
 
 .durationWrapper div:hover {
@@ -86,8 +98,12 @@ body {
 }
 
 .offer_annul {
-    padding: 40px 0;
-    width: 100%;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
 }
 
 .widgetContainer {
@@ -108,68 +124,86 @@ body {
 
 /*=====MAP =====*/
 
-.map {
-    background-color: #CCCCCC;
-    position: sticky !important;
+.npy_map {
+    position: sticky;
     top: 0;
-    right: 0;
-    left: 0;
+    min-height: 100vh;
 }
+
+#npyMap{
+    width:100%;
+    height: calc(100vh - 50px);
+    background: #ccc;
+}
+
+#npyMap img{
+    max-width:100%;
+    height: auto;
+}
+
 
 /*====== BANDEAU GLOBAL MOTEUR ======*/
 
-.npy_message{
-    width:100vw;
-    background:#fff;
-    color:#003d7b;
+.npy_message {
+    width: 100vw;
+    background: #fff;
+    color: #003d7b;
     position: fixed;
-    bottom:0px;
-    left:0px;
-    background:#fff;
+    bottom: 0px;
+    left: 0px;
+    background: #fff;
     box-shadow: 0px 0px 16px rgba(2, 31, 56, 0.49);
     z-index: 9999999;
 }
 
-.npy_message img{
+.npy_message img {
     width: 100%;
-    height:auto;
+    height: auto;
 }
 
-.npy_message span{
-    color:#eb6465;
-    font-weight:bold;
+.npy_message span {
+    color: #eb6465;
+    font-weight: bold;
 }
 
-.npy_message .cont_grid7{
+.npy_message .cont_grid7 {
     display: flex;
     align-items: center;
 }
 
-.npy_message .cont_grid7 div{
-    display:inline-block;
-    padding:20px 40px;
-    width:50%;
+.npy_message .cont_grid7 div {
+    display: inline-block;
+    padding: 20px 40px;
+    width: 50%;
 }
 
-
-
-.npy_message a{
-    color:#fff;
-    background:#eb6465;
-    padding:10px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
+.npy_message a {
+    color: #fff;
+    background: #eb6465;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
 }
-.npy_message a:hover{
-    background:#021f38;
+
+.npy_message a:hover {
+    background: #021f38;
 }
 
 
 /*=====ITEMS====*/
 
+.offer_annul > div .lgmt,
+.offer_annul > div .lgmt .cont_grid_item {
+    height: 100%;
+}
+
+.offer_annul .cont_grid_item {
+    animation: Opacity .7s;
+    margin-bottom: 0;
+}
+
 .offer_annul .cont_grid_img img {
-    max-width: 100%;
     border-radius: 5px 5px 0px 0px !important;
 }
 
@@ -197,10 +231,6 @@ body {
     font-weight: 900 !important;
     font-size: 17px !important;
     text-transform: none !important;
-}
-
-.offer_annul .cont_grid_item {
-    animation: Opacity .7s;
 }
 
 @keyframes Opacity {
@@ -235,15 +265,16 @@ body {
 
 /*======MEDIA QUERIES====*/
 
+
 @media screen and (max-width: 1080px) {
 
-        .npy_message .cont_grid3{
-            display: none
-        }
+    .npy_message .cont_grid3 {
+        display: none
+    }
 
-        .npy_message .cont_grid7{
-            width:100%;
-        }
+    .npy_message .cont_grid7 {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -324,7 +355,7 @@ body {
         animation-delay: 0.5s;
         animation-fill-mode: forwards;
         animation-timing-function: step-start;
-        box-shadow:  0 5px 10px 5px rgba(220, 234, 249, 1);
+        box-shadow: 0 5px 10px 5px rgba(220, 234, 249, 1);
     }
 
     .durationOption {
@@ -348,9 +379,26 @@ body {
             transform: scaleY(0);
         }
     }
-    
+
     .npy_map {
         display: none;
+    }
+
+    .cont_grid8 {
+        width: 100%;
+    }
+
+    .offer_annul {
+        padding: 25px 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+
+    .offer_annul {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
