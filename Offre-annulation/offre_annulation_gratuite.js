@@ -10,7 +10,7 @@ const npyWidgetWrapper = document.querySelector('.widget_resa');
 
 
 
-//Map
+//Creation de la map
 var mymap = L.map('npyMap').setView([43.1731, -1.225], 5);
 
 
@@ -41,6 +41,7 @@ function filterItemsByResort(choix) {
     
     for (var i = 0; i < npySummerProm.length; i++) {
 
+//creation des items   
         if ((npySummerProm[i].station) === choix || choix === 'all') {
             let npyUrl = npySummerProm[i].ui;
             let nom = npySummerProm[i].nom;
@@ -59,10 +60,14 @@ function filterItemsByResort(choix) {
         } else {}
     }
 
+
+    //Mise en tableau des items crees
     let createdItems = document.querySelectorAll('.lgmt');
     let createdImages = Array.from(document.querySelectorAll('.npyImage'));
     let itemLocs = Array.from(document.querySelectorAll('.cont_grid_text'));
 
+
+    //Remplissage des elements des items
     for (let i = 0; i < createdItems.length; i++) {
 
 
@@ -71,6 +76,7 @@ function filterItemsByResort(choix) {
         let image = createdItems[i].dataset.img;
         let lat = createdItems[i].dataset.lat;
         let lng = createdItems[i].dataset.lng;
+        let npyMapUi = createdItems[i].dataset.lgmt;
 
 
         let itemLocsLieu = `<div class="cont_grid_baseline lieu"><img src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/gps.png"/><b>${loc}</b></div>`;
@@ -87,12 +93,13 @@ function filterItemsByResort(choix) {
 
         createdImages[i].src = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image;
 
+    //Creation des POIS ssur la map et centrage
         if (lat==='0' && lng==='0'){
 
             }
             else{
               let marker = L.marker([lat, lng]).addTo(mymap);
-              marker.bindPopup(`<p><img src="img/${image}"></p><p><b>${type}</b><br>${loc}</p><p></p>`);
+              marker.bindPopup(`<p><img class="npyMapImg"></p><p><b>${type}</b><br>${loc}</p><p><a class="npyMapCta" href="https://www.n-py.com/fr/reservation?_wos=v2%2Cu%2C${npyUi}">En savoir +</a></p>`);
               markersLayer.push(marker); 
               mapBounds.push([lat,lng]);
 
@@ -103,8 +110,24 @@ function filterItemsByResort(choix) {
 
     mymap.invalidateSize();
     mymap.fitBounds(mapBounds);
+    let createdMarkers = Array.from(document.querySelectorAll('.leaflet-marker-icon'));
+    for (var i = 0; i < createdMarkers.length; i++) {
+        createdMarkers[i].dataset.img=createdItems[i].dataset.img;
+    }
+    console.log(createdMarkers)
+
+    
 
 
+//Remplissage img popups
+    
+       createdMarkers.forEach(element => element.addEventListener("click", function (e) {
+        document.querySelector('.npyMapImg').src=this.dataset.img;
+       }));
+    
+
+
+//Logique métier au clic sur les éléments
     createdItems.forEach(element => element.addEventListener("click", function (e) {
         npyWidgetWrapper.innerHTML = '';
         let npyUi = this.dataset.lgmt;
@@ -129,8 +152,12 @@ function filterItemsByResort(choix) {
             scrollToElement('widget_resa');
         }
     }));
+
+    
 }
 
+
+//Scroll au clic
 function scrollToElement(element) {
     window.scroll({
         behavior: 'smooth',
@@ -149,5 +176,5 @@ resortButtons.forEach(element => element.addEventListener('click', function (e) 
     this.classList.add('active');
     filterItemsByResort(chosenResort);
     mymap.setView([this.dataset.lat, this.dataset.long], 10);
-    //document.querySelector('iframe').src=`https://www.n-py.com/fr/${chosenResort}`;
+
 }));

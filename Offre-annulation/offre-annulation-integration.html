@@ -1,68 +1,548 @@
 <div class="npy_fullWidthBg">
     <div class="page-content-npy">
         <section class="cont_row">
-            <h2>Réservez votre séjour pour cet été avec l'esprit libre !</h2>
-            <p><span class="npy_reassurance">Offre flex</span>     <span class="npy_reassurance">Annulation jusqu'à j-5 offerte</span>      <span class="npy_reassurance">Remboursement sous 15 jours</span></p>
-             <p><b>Pour votre séjour du premier mai au 15 septembre 2020, ne vous souciez plus d’une éventuelle annulation !</b></p>
-                        <p>Pour tout contretemps ou souci lié au Covid-19 (restriction de déplacement, symptômes avérés, mise en quarantaine etc... ) les hébergeurs ci-dessous font preuve de flexibilité en vous proposant d’annuler votre séjour jusqu’à J-5, sans frais ! Vous serez remboursé(e) à 100% sous 15 jours.</p>
+            <h2>Réservez votre séjour pour cet été avec l&#39;esprit libre !</h2>
+            <p><span class="npy_reassurance">Offre flex</span> <span class="npy_reassurance">Annulation jusqu&#39;à j-5 offerte</span> <span class="npy_reassurance">Remboursement sous 15 jours</span></p>
+            <p><b>Pour votre séjour du premier mai au 15 septembre 2020, ne vous souciez plus d&rsquo;une éventuelle annulation !</b></p>
+            <p>
+                Pour tout contretemps ou souci lié au Covid-19 (restriction de déplacement, symptômes avérés, mise en quarantaine etc... ) les hébergeurs ci-dessous font preuve de flexibilité en vous proposant d&rsquo;annuler votre séjour
+                jusqu&rsquo;à J-5, sans frais ! Vous serez remboursé(e) à 100% sous 15 jours.
+            </p>
         </section>
     </div>
 </div>
-
 <div class="npy_fullWidthBg">
     <div class="page-content-npy">
         <section class="cont_row npy_offerHeader">
-            
-                    <div class="durationWrapper">
-                        <div class="durationSelector" data-resort="Cauterets">Cauterets</div>
-                        <div class="durationSelector" data-resort="Gourette">Gourette</div>
-                        <div class="durationSelector" data-resort="Lpsm">La Pierre<br>St Martin</div>
-                        <div class="durationSelector" data-resort="Luz">Luz-Ardiden</div>
-                        <div class="durationSelector" data-resort="Tourmalet">Grand Tourmalet</div>
-                        <div class="durationSelector" data-resort="Peyragudes">Peyragudes</div>
-                        <div class="durationSelector" data-resort="Piau">Piau Engaly</div>
+            <div class="durationWrapper desktop">
+                <div class="durationSelector" data-lat="42.888562" data-long="-0.114409" data-resort="all">Tous</div>
+                <div class="durationSelector" data-lat="42.888562" data-long="-0.114409" data-resort="Cauterets">Cauterets</div>
+                <div class="durationSelector" data-lat="42.958567" data-long="-0.332481" data-resort="Gourette">Gourette</div>
+                <div class="durationSelector" data-lat="42.977999" data-long="-0.746738" data-resort="Lpsm">
+                    La Pierre<br />
+                    St Martin
+                </div>
+                <div class="durationSelector" data-lat="42.872644" data-long="-0.003282" data-resort="Luz">Luz-Ardiden</div>
+                <div class="durationSelector" data-lat="42.910216" data-long="0.176709" data-resort="Tourmalet">Grand Tourmalet</div>
+                <div class="durationSelector" data-lat="42.783545" data-long="0.461315" data-resort="Peyragudes">Peyragudes</div>
+                <div class="durationSelector" data-lat="42.783513" data-long="0.159022" data-resort="Piau">Piau Engaly</div>
+            </div>
+            <div class="durationWrapper mobile">
+                <div class="durationCurrent" tabindex="1">
+                    <div class="durationSelector" data-lat="#" data-long="-#" data-resort="Piau">
+                        <input checked="checked" class="durationInput" id="0" name="Ben" type="radio" value="1" />
+                        <p class="durationInputText">Piau Engaly</p>
                     </div>
+                    <div class="durationSelector" data-lat="42.888562" data-long="-0.114409" data-resort="Cauterets">
+                        <input checked="checked" class="durationInput" id="1" name="Ben" type="radio" value="2" />
+                        <p class="durationInputText">Cauterets</p>
+                    </div>
+                    <div class="durationSelector" data-lat="42.958567" data-long="-0.332481" data-resort="Gourette">
+                        <input checked="checked" class="durationInput" id="2" name="Ben" type="radio" value="3" />
+                        <p class="durationInputText">Gourette</p>
+                    </div>
+                    <div class="durationSelector" data-lat="42.977999" data-long="-0.746738" data-resort="Lpsm">
+                        <input checked="checked" class="durationInput" id="3" name="Ben" type="radio" value="4" />
+                        <p class="durationInputText">La Pierre Saint-Martin</p>
+                    </div>
+                    <div class="durationSelector" data-lat="42.872644" data-long="-0.003282" data-resort="Luz">
+                        <input checked="checked" class="durationInput" id="4" name="Ben" type="radio" value="5" />
+                        <p class="durationInputText">Luz Ardiden</p>
+                    </div>
+                    <div class="durationSelector" data-lat="42.910216" data-long="0.176709" data-resort="Tourmalet">
+                        <input checked="checked" class="durationInput" id="5" name="Ben" type="radio" value="6" />
+                        <p class="durationInputText">Grand Tourmalet</p>
+                    </div>
+                    <div class="durationSelector" data-lat="42.783545" data-long="0.461315" data-resort="Peyragudes">
+                        <input checked="checked" class="durationInput" id="6" name="Ben" type="radio" value="7" />
+                        <p class="durationInputText">Peyragudes</p>
+                    </div>
+                    <div class="durationSelector" data-lat="42.783513" data-long="0.159022" data-resort="all">
+                        <input checked="checked" class="durationInput" id="7" name="Ben" type="radio" value="8" />
+                        <p class="durationInputText">Toutes les stations</p>
+                    </div>
+                    <img alt="Arrow Icon" aria-hidden="true" class="durationIcon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" />
+                </div>
+                <ul class="durationList">
+                    <li><label aria-hidden="aria-hidden" class="durationOption" for="0">Piau Engaly</label></li>
+                    <li><label aria-hidden="aria-hidden" class="durationOption" for="1">Cauterets</label></li>
+                    <li><label aria-hidden="aria-hidden" class="durationOption" for="2">Gourette</label></li>
+                    <li><label aria-hidden="aria-hidden" class="durationOption" for="3">La Pierre Saint-Martin</label></li>
+                    <li><label aria-hidden="aria-hidden" class="durationOption" for="4">Luz Ardiden</label></li>
+                    <li><label aria-hidden="aria-hidden" class="durationOption" for="5">Grand Tourmalet</label></li>
+                    <li><label aria-hidden="aria-hidden" class="durationOption" for="6">Peyragudes</label></li>
+                    <li><label aria-hidden="aria-hidden" class="durationOption" for="7">Toutes les stations</label></li>
+                </ul>
+            </div>
         </section>
     </div>
 </div>
-    
 <div class="npy_fullWidthBg">
     <div class="page-content-npy">
-        <section class="cont_row grille12col">    
-            <div class="cont_grid4 npy_map">
-                <iframe  id="map" width="100%" height="800px" frameborder="0" allowfullscreen src="https://umap.openstreetmap.fr/fr/map/carte-sans-nom_461347?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
-            </div>
-            <div class="cont_grid8">
-                <section class="cont_row offer_annul">
-                    <div class="cont_wrapper promo">
-                    </div>
-                </section>
-            </div>
-        </section> 
-    </div>  
-</div>
-
-<div class="npy_fullWidthBg widgetContainer">
-    <div class="page-content-npy">
-        <section id="widget_resa" class="cont_row widget_resa">
-                    
+        <section class="cont_row grille12col">
+            <div class="cont_grid4 npy_map"><div id="npyMap"></div></div>
+            <!-- delete div.cont_wrapper.promo
+                     delete section.cont_row.offer_annul
+                     change from div.cont_grid8 to div.cont_grid8.offer_annul -->
+            <div class="cont_grid8 offer_annul"></div>
         </section>
     </div>
 </div>
+<div class="npy_fullWidthBg widgetContainer">
+    <div class="page-content-npy"><section class="cont_row widget_resa" id="widget_resa"></section></div>
+</div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+    <style>
+
+:root {
+        --red: #fb236a;
+        --blue: #003d7b;
+        --salmon: #ff6f5d;
+        --grey: #dceaf9;
+        --black: #242424;
+        --green: #1bc74e;
+        --bg-blue: #162238;
+        --radius: 10px;
+        --shadow: 0px 0px 16px rgb(18, 26, 37);
+        --shadow-white: 5px 0px 18px rgba(0, 61, 123, 0.13);
+    }
+
+
+    /*==RESET PAGE==*/
+    
+    html, body, #wrapper {
+        overflow: visible !important;
+    }
+
+    #content-main {
+        background: #fff;
+    }
+
+    .cont_grid6 img {
+        max-width: 100%
+    }
+
+    #content-top {
+        background: #fff !important;
+    }
+
+    /*==SELECTEUR==*/
+
+    .durationWrapper.desktop {
+        border-bottom: 1px solid var(--grey);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .durationWrapper.mobile {
+        display: none;
+    }
+
+    .durationSelector {
+        padding-bottom: 12px;
+        border-bottom: 12px solid transparent;
+        transform: translateY(7px);
+    }
+
+    .durationSelector:hover {
+        color: var(--salmon);
+        font-weight: 900;
+    }
+
+    .durationSelector.active {
+        color: var(--salmon);
+        border-bottom: 12px solid var(--salmon);
+    }
+
+    .durationWrapper div:hover {
+        cursor: pointer;
+        font-weight: bold
+    }
+
+
+    /*=== PARAMETRAGE ROWS FULLWIDTH===*/
+
+    .npy_fullWidthBg {
+        color: #003d7b;
+        width: 100%;
+    }
+
+    .npy_fullWidthBg .page-content-npy {
+        width: 90%;
+        margin: auto;
+    }
+
+    .npy_fullWidthBg .cont_grid3,
+    .npy_fullWidthBg .cont_grid4,
+    .npy_fullWidthBg .cont_grid6 {
+        padding: 25px;
+    }
+
+    .offer_annul {
+        padding: 25px!important;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+
+    .widgetContainer {
+        background: #f7f5f5;
+        padding: 80px 0px;
+    }
+
+
+    /*=== REASSURANCE===*/
+
+    .npy_reassurance {
+        background: #ff6f5d;
+        font-size: 14px;
+        color: #fff;
+        padding: 2px;
+    }
+
+
+    /*=====MAP =====*/
+
+    .npy_map {
+        position: sticky;
+        top: 0;
+        min-height: 100vh;
+    }
+
+    #npyMap {
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #ccc;
+    }
+
+    #npyMap img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+
+    .leaflet-pane.leaflet-popup-pane{
+        width:200px;
+        height:auto;
+    }
+
+    .npyMapCta{
+        background: var(--salmon);
+        color: #fff!important;
+        padding: 5px 7px;
+        border-radius: 50px;
+        text-decoration: none
+    }
+
+    .npyMapCta:hover{
+        background: var(--blue);
+        cursor: pointer
+    }
 
 
 
 
-<script type="text/javascript" src="https://gadget.open-system.fr/widgets-libs/rel/noyau-1.0.min.js"></script>
-<script type="text/javascript">
-    const npySummerProm=[
+    /*====== BANDEAU GLOBAL MOTEUR ======*/
+
+    .npy_message {
+        width: 100vw;
+        background: #fff;
+        color: #003d7b;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        background: #fff;
+        box-shadow: 0px 0px 16px rgba(2, 31, 56, 0.49);
+        z-index: 9999999;
+    }
+
+    .npy_message img {
+        width: 100%;
+        height: auto;
+    }
+
+    .npy_message span {
+        color: #eb6465;
+        font-weight: bold;
+    }
+
+    .npy_message .cont_grid7 {
+        display: flex;
+        align-items: center;
+    }
+
+    .npy_message .cont_grid7 div {
+        display: inline-block;
+        padding: 20px 40px;
+        width: 50%;
+    }
+
+    .npy_message a {
+        color: #fff;
+        background: #eb6465;
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+
+    }
+
+    .npy_message a:hover {
+        background: #021f38;
+    }
+
+
+    /*=====ITEMS====*/
+
+    .offer_annul>div .lgmt,
+    .offer_annul>div .lgmt .cont_grid_item {
+        height: 100%;
+    }
+
+    .offer_annul .cont_grid_item {
+        animation: Opacity .7s;
+        margin-bottom: 0;
+    }
+
+    .offer_annul .cont_grid_img {
+        line-height: normal;
+    }
+
+    .offer_annul .cont_grid_img img {
+        border-radius: 5px 5px 0px 0px !important;
+    }
+
+    .offer_annul .cont_grid_baseline {
+        font-size: 11px;
+        margin: 5px 5px 5px 0px !important;
+        display: inline-block;
+        border: 1px solid #7c96d175;
+        padding: 5px 10px;
+        border-radius: 50px;
+    }
+
+    .offer_annul .cont_grid_text div {
+        display: inline-block;
+    }
+
+    .offer_annul .cont_grid_baseline img {
+        height: 12px;
+        width: auto;
+        margin: 0px 7px 0px -3px;
+        transform: translateY(-2px);
+    }
+
+    .offer_annul .cont_title3 {
+        font-weight: 900 !important;
+        font-size: 17px !important;
+        text-transform: none !important;
+    }
+
+    @keyframes Opacity {
+        from {
+            transform: translateY(10px);
+            opacity: 0
+        }
+
+        to {
+            transform: translateY(0px);
+            opacity: 1
+        }
+    }
+
+    .offer_annul .cont_grid_item:hover img {
+        opacity: 1 !important;
+        cursor: pointer;
+    }
+
+    .offer_annul .npy_activ_title h3 {
+        font-size: 17px;
+        text-transform: none;
+        padding: 0;
+        margin: 15px 0px 2px 0px;
+    }
+
+    .offer_annul .npy_activ_title p {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /*======MEDIA QUERIES====*/
+ 
+    @media screen and (min-width: 1300px) {
+        #header .full-width {
+            width: 1200px !important;
+        }
+    }
+ 
+    @media screen and (min-width: 1025px) {
+        #header .full-width {
+            width: auto;
+        }
+    }
+    @media screen and (max-width: 1080px) {
+
+        .npy_message .cont_grid3 {
+            display: none
+        }
+
+        .npy_message .cont_grid7 {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+
+        .durationWrapper.desktop {
+            display: none;
+        }
+
+        .durationWrapper.mobile {
+            display: block;
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .durationCurrent {
+            position: relative;
+            box-shadow: 0 5px 10px 5px rgba(220, 234, 249, 1);
+            cursor: pointer;
+            outline: none;
+        }
+
+        .durationCurrent:focus+.durationList {
+            opacity: 1;
+            animation-name: none;
+        }
+
+        .durationCurrent:focus+.durationList .durationOption {
+            cursor: pointer;
+        }
+
+        .durationCurrent:focus .durationIcon {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        .durationIcon {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            width: 20px;
+            opacity: 0.3;
+            transition: 0.2s ease;
+        }
+
+        .durationSelector {
+            display: flex;
+            padding: inherit;
+            border-bottom: 0;
+            transform: none;
+        }
+        .durationWrapper.mobile .durationSelector.active {
+            border-bottom: 0;
+        }
+
+        .durationInput {
+            display: none;
+        }
+
+        .durationInput:checked+.durationInputText {
+            display: block;
+        }
+
+        .durationInputText {
+            display: none;
+            width: 100%;
+            margin: 0;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .durationList {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            padding: 0;
+            list-style: none;
+            opacity: 0;
+            animation-name: HideList;
+            animation-duration: 0.5s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: step-start;
+            box-shadow: 0 5px 10px 5px rgba(220, 234, 249, 1);
+        }
+
+        .durationOption {
+            display: block;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .durationOption:hover,
+        .durationOption:focus {
+            color: #546c84;
+            background-color: #dceaf9;
+        }
+
+        @keyframes HideList {
+            from {
+                transform: scaleY(1);
+            }
+
+            to {
+                transform: scaleY(0);
+            }
+        }
+
+        .npy_map {
+            display: none;
+        }
+
+        .cont_grid8 {
+            width: 100%;
+        }
+
+        .offer_annul {
+            padding: 25px 10px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+    @media screen and (max-width: 475px) {
+
+        .offer_annul {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+
+    </style>
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+    <script type="text/javascript" src="https://gadget.open-system.fr/widgets-libs/rel/noyau-1.0.min.js"></script>
+    <script>const npySummerProm=[
     {
         nom:'Maison d\'Orride',
         type:'Hotels / Chambres d\'hôtes',
         loc:'Ledeuix',
         station:'Lpsm',
         ui:'OSCH-72613',
-        pic:'maison-orride.jpg'
+        pic:'maison-orride.jpg',
+        lat:43.242881, 
+        lng:-0.607716,
+
 
     },
     {
@@ -71,7 +551,9 @@
         loc:'Peyragudes',
         station:'Peyragudes',
         ui:'OSMB-64622',
-        pic:'placeholder.jpg'
+        pic:'placeholder.jpg',
+        lat:42.794963,
+        lng:0.443261
 
     },
     {
@@ -80,16 +562,20 @@
         loc:'Peyragudes',
         station:'Peyragudes',
         ui:'MARK-42660',
-        pic:'placeholder.jpg'
+        pic:'maison_de_peyragudes.jpg',
+        lat:0,
+        lng:0,
 
     },
     {
         nom:'Agence pic du midi',
         type:'Appartements',
-        loc:'Peyragudes',
+        loc:'La Mongie',
         station:'Tourmalet',
         ui:'ZEPH-64477',
-        pic:'placeholder.jpg'
+        pic:'agence_picdumidi.jpg',
+        lat:0,
+        lng:0,
 
     },
     {
@@ -98,7 +584,9 @@
         loc:'B. de Bigorre',
         station:'Tourmalet',
         ui:'AVAI-39677',
-        pic:'domaine-ramonjuan.jpg'
+        pic:'domaine-ramonjuan.jpg',
+        lat:42.988780,
+        lng:0.109380,
 
     },
     {
@@ -107,7 +595,10 @@
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'AVAI-43796',
-        pic:'meretgolf-pic.jpg'
+        pic:'meretgolf-pic.jpg',
+        lat:42.910431,
+        lng:0.171008
+
 
     },
     {
@@ -116,25 +607,31 @@
         loc:'La Mongie',
         station:'Tourmalet',
         ui:'AVAI-43794',
-        pic:'meretgolf-tourmalet.jpg'
+        pic:'meretgolf-tourmalet.jpg',
+        lat:42.911829,
+        lng:0.174001
 
     },
     {
         nom:'Résidence Richelieu',
         type:'Appartements',
-        loc:'Peyragudes',
-        station:'lpsm',
+        loc:'La Pierre St Martin',
+        station:'Lpsm',
         ui:'OSMB-35536',
-        pic:'placeholder.jpg'
+        pic:'residence_richelieu.jpg',
+        lat:0,
+        lng:0,
 
     },
     {
         nom:'Résidence Gascogne',
         type:'Appartements',
-        loc:'Peyragudes',
-        station:'lpsm',
-        ui:'OSMB-108746',
-        pic:'placeholder.jpg'
+        loc:'Gourette',
+        station:'Gourette',
+        ui:'OSMB-108746-1',
+        pic:'residence_gascogne.jpg',
+        lat:42.970744,
+        lng:-0.390991
 
     },
     {
@@ -143,7 +640,9 @@
         loc:'Cauterets',
         station:'Cauterets',
         ui:'HRIT-35250',
-        pic:'hotel-boisjoli.jpg'
+        pic:'hotel-boisjoli.jpg',
+        lat:42.888554,
+        lng:-0.113872,
 
     },
     {
@@ -152,7 +651,9 @@
         loc:'B. de Bigorre',
         station:'Tourmalet',
         ui:'AVAI-47066',
-        pic:'hotel-carrepy.jpg'
+        pic:'hotel-carrepy.jpg',
+        lat:43.055462,
+        lng: 0.157509,
 
     },
     {
@@ -161,7 +662,20 @@
         loc:'Sazos',
         station:'Luz-Ardiden',
         ui:'OSCH-48058',
-        pic:'placeholder.jpg'
+        pic:'gite_la_maisonnee.jpg',
+        lat:42.884124,
+        lng: -0.025394,
+
+    },
+    {
+        nom:'Camping de l\'Adour',
+        type:'Campings',
+        loc:'Gerde',
+        station:'Tourmalet',
+        ui:'OSCA-40376',
+        pic:'camping_adour.jpg',
+        lat:43.052779,
+        lng: 0.159368,
 
     },
     {
@@ -170,7 +684,9 @@
         loc:'Agos Vidalos',
         station:'Luz',
         ui:'CVERT-36125',
-        pic:'camping-pibeste.jpg'
+        pic:'camping-pibeste.jpg',
+        lat:43.035626, 
+        lng:-0.070879,
 
     },
     {
@@ -179,7 +695,9 @@
         loc:'Piau Engaly',
         station:'Piau',
         ui:'NOVH-47375',
-        pic:'hotel-4ours.jpg'
+        pic:'hotel-4ours.jpg',
+        lat:42.783880, 
+        lng:0.159078,
 
     },
     {
@@ -188,7 +706,9 @@
         loc:'Montory',
         station:'Lpsm',
         ui:'HRIT-29997',
-        pic:'auberge-etable.jpg'
+        pic:'auberge-etable.jpg',
+        lat:43.098069,
+        lng:-0.817631,
 
     },
     {
@@ -197,7 +717,9 @@
         loc:'Gourette',
         station:'Gourette',
         ui:'HRES-36724',
-        pic:'placeholder.jpg'
+        pic:'agence_barroso.jpg',
+        lat:0,
+        lng:0,
 
     },
     {
@@ -206,7 +728,9 @@
         loc:'Peyragudes',
         station:'Peyragudes',
         ui:'OSMB-43060',
-        pic:'placeholder.jpg'
+        pic:'residence_adrets.jpg',
+        lat:42.796258,
+        lng:0.438932,
 
     },
     {
@@ -215,7 +739,9 @@
         loc:'Peyragudes',
         station:'Peyragudes',
         ui:'OSMB-109565',
-        pic:'placeholder.jpg'
+        pic:'appart_toit.jpg',
+        lat:0,
+        lng:0,
 
     },
     {
@@ -224,363 +750,920 @@
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-109565',
-        pic:'placeholder.jpg'
+        pic:'placeholder.jpg',
+        lat:0,
+        lng:0,
+
+    },
+    
+
+    //Loueurs particuliers
+    {
+        nom:'Arcizettes 2',
+        type:'Appartement',
+        loc:'Gourette',
+        station:'Gourette',
+        ui:'OSMB-64221-2',
+        pic:'arcizettes.jpg',
+        lat:42.958021,
+        lng:-0.333110,
+        capacite:8,
+        prix:120,
+        duree:'semaine'
+    },
+    {
+        nom:'Campbielh 2',
+        type:'Appartement',
+        loc:'Piau',
+        station:'Piau',
+        ui:'OSMB-92961-2',
+        pic:'campbielh2.jpg',
+        lat:42.784206, 
+        lng:0.159462,
+        capacite:0,
+        prix:0,
+        duree:'#'
+    },
+    {
+        nom:'Ramondia 405',
+        type:'Appartement',
+        loc:'Piau',
+        station:'Piau',
+        ui:'OSMB-39493-1',
+        pic:'ramondia405.jpg',
+        lat:42.783694,
+        lng: 0.161321,
 
     },
     {
-        nom:'Sélection Loueurs Particuliers',
+        nom:'Chalet 72',
         type:'Appartement',
-        loc:'Peyragudes',
-        station:'lpsm',
-        ui:'CA-OPROM-43702-1334',
-        pic:'placeholder.jpg'
+        loc:'La Pierre St martin',
+        station:'Lpsm',
+        ui:'OSMB-70818-1',
+        pic:'chalet72.jpg',
+        lat:42.977093, 
+        lng:-0.742837,
 
     },
     {
-        nom:'Appartement #',
+        nom:'Mongie 1900',
         type:'Appartement',
-        loc:'Peyragudes',
-        station:'lpsm',
-        ui:'CA-OPROM-43702-1334',
-        pic:'placeholder.jpg'
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'OSMB-93431-1',
+        pic:'mongie1900.jpg',
+        lat:42.911939,
+        lng:0.176423,
 
     },
-];
+    {
+        nom:'Neouvielle',
+        type:'Appartement',
+        loc:'Piau Engaly',
+        station:'Piau',
+        ui:'OSMB-39476-6',
+        pic:'neouvielle.jpg',
+        lat:42.785044, 
+        lng:0.158978,
 
-let npyIdIntegration = "1331";
+    },
+    {
+        nom:'Pascal S.',
+        type:'Appartement',
+        loc:'Barèges',
+        station:'Tourmalet',
+        ui:'OSMB-93370-1',
+        pic:'apptpascals.jpg',
+        lat:42.895196, 
+        lng:0.061583,
+    },
+    {
+        nom:'Chateau de Beost',
+        type:'Appartement',
+        loc:'Gourette',
+        station:'Gourette',
+        ui:'OSMB-71493-1',
+        pic:'chateau_beost.jpg',
+        lat:42.993772,
+        lng:-0.415816,
+    },
+    {
+        nom:'Appartement 5',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-92162-1',
+        pic:'appartement5.jpg',
+        lat:42.891183, 
+        lng:-0.117219,
+    },
+    {
+        nom:'Michele S.',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-35623-6',
+        pic:'apptmicheles.jpg',
+        lat:42.885210,
+        lng: -0.111638,
+    },
+    {
+        nom:'La Mongie 1800',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'OSMB-47648-1',
+        pic:'mongie1800.jpg',
+        lat:42.911990, 
+        lng:0.176604,
+    },
+     {
+        nom:'Lehailla',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'OSMB-40211-1',
+        pic:'lehailla.jpg',
+        lat:43.112639, 
+        lng:0.203907,
+    },
+     {
+        nom:'Maison Domer',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-35698-9',
+        pic:'maisondomer.jpg',
+        lat:42.886800, 
+        lng:-0.113727,
+    },
+     {
+        nom:'Maison Domer 2',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-35698-6',
+        pic:'maisondomer2.jpg',
+        lat:42.886800, 
+        lng:-0.113728,
+    },
+     {
+        nom:'Maison Domer 3',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-35698-7',
+        pic:'maisondomer3.jpg',
+        lat:42.886800, 
+        lng:-0.113729,
+    },
+     {
+        nom:'Maison Domer 4',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-35698-10',
+        pic:'maisondomer4.jpg',
+        lat:42.886800, 
+        lng:-0.113730,
+    },
+    {
+        nom:'Maison Domer 5',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-35698-8',
+        pic:'maisondomer5.jpg',
+        lat:42.886800, 
+        lng:-0.113731,
+    },
+    {
+        nom:'Meublé Domer 1',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-35698-4',
+        pic:'meuble_domer.jpg',
+        lat:42.886800, 
+        lng:-0.113732,
+    },
+    {
+        nom:'Meublé Domer 2',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-35698-1',
+        pic:'meuble_domer2.jpg',
+        lat:42.886800, 
+        lng:-0.113733,
+    },
+    {
+        nom:'Jerome P.',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalett',
+        ui:'OSMB-64018-1',
+        pic:'apptjeromep.jpg',
+        lat:43.063839,
+        lng: 0.146531,
+    },
+    {
+        nom:'Chantal D.',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-35677-1',
+        pic:'apptchantald.jpg',
+        lat:42.887050,
+        lng:-0.113088,
+    },
+    {
+        nom:'Christophe D.',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-63759-1',
+        pic:'apptchristophed.jpg',
+        lat:42.887409, 
+        lng:-0.113220,
+    },
+    {
+        nom:'Residence Le Mahourat',
+        type:'Appartement',
+        loc:'La Pierre St Martin',
+        station:'Lpsm',
+        ui:'OSMB-59764-1',
+        pic:'residence_le_mahourat.jpg',
+        lat:42.977506,
+        lng:-0.744980,
+    },
+    {
+        nom:'Val Soleil',
+        type:'Appartement',
+        loc:'Gourette',
+        station:'Gourette',
+        ui:'OSMB-64414-1',
+        pic:'val_soleil.jpg',
+        lat:42.959073,
+        lng:-0.332202,
+    },
+    {
+        nom:'Helios',
+        type:'Appartement',
+        loc:'Barèges',
+        station:'Tourmalet',
+        ui:'OSMB-47242-1',
+        pic:'helios.jpg',
+        lat:42.896153,
+        lng:0.061040,
+    },
+    {
+        nom:'Gîte Campan',
+        type:'Gîte',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'OSMB-93179-1',
+        pic:'gite_campan.jpg',
+        lat:43.007599,
+        lng:0.187871,
+    },
+    {
+        nom:'Les Myrtilles',
+        type:'Appartement',
+        loc:'La Pierre St Martin',
+        station:'Lpsm',
+        ui:'OSMB-99541-1',
+        pic:'lesmyrtilles.jpg',
+        lat:42.977653, 
+        lng:-0.744662,
+    },
+    {
+        nom:'Chalet de montagne',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'OSMB-102481-1',
+        pic:'chalet_de_montagnes.jpg',
+        lat:42.966249, 
+        lng:0.229813,
+    },
+    {
+        nom:'Studio Cauterets',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-68297-3',
+        pic:'studio_cauterets.jpg',
+        lat:42.888686, 
+        lng:-0.113489,
+    },
+    {
+        nom:'Club 2',
+        type:'Appartement',
+        loc:'Piau Engaly',
+        station:'Piau',
+        ui:'OSMB-65885-1',
+        pic:'clubII_n52.jpg',
+        lat:42.783268, 
+        lng:0.159856,
+    },
+    {
+        nom:'Mongie Tourmalet',
+        type:'Appartement',
+        loc:'La Mongiee',
+        station:'Tourmalet',
+        ui:'OSMB-63857-1',
+        pic:'mongietourmalet.jpg',
+        lat:42.909237, 
+        lng:0.167143,
+    },
+    {
+        nom:'Résidence Anglas',
+        type:'Appartement',
+        loc:'Gourette',
+        station:'Gourette',
+        ui:'OSMB-65564-1',
+        pic:'residence_anglas.jpg',
+        lat:42.958202, 
+        lng:-0.333473,
+    },
+    {
+        nom:'Bero Bisto',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'OSMB-64735-1',
+        pic:'bero_bisto_n7.jpg',
+        lat:42.910905, 
+        lng:0.174210,
+    },
+    {
+        nom:'Myrtilles 1',
+        type:'Appartement',
+        loc:'Piau Engaly',
+        station:'Piau',
+        ui:'OSMB-64985-1',
+        pic:'myrtilles1.jpg',
+        lat:42.782992,
+        lng: 0.159415,
+    },
+    {
+        nom:'Myrtilles 2',
+        type:'Appartement',
+        loc:'Piau Engaly',
+        station:'Piau',
+        ui:'OSMB-64985-2',
+        pic:'myrtilles1_surpistes.jpg',
+        lat:42.782992,
+        lng: 0.159415,
+    },
+    {
+        nom:'Myrtilles 3',
+        type:'Appartement',
+        loc:'Piau Engaly',
+        station:'Piau',
+        ui:'OSMB-64985-3',
+        pic:'myrtilles1_surpistes.jpg',
+        lat:42.782992,
+        lng: 0.159415,
+    },
+    {
+        nom:'Appartement centre-ville',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-47776-1',
+        pic:'appt_centreville.jpg',
+        lat:42.887581, 
+        lng:-0.113632,
+    },
+    {
+        nom:'La bergerie',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'OSMB-92299-1',
+        pic:'la_bergerie.jpg',
+        lat:43.101881, 
+        lng:0.075124,
+    },
+    {
+        nom:'Bois de Marie',
+        type:'Appartement',
+        loc:'Barèges',
+        station:'Tourmalet',
+        ui:'OSMB-63637-1',
+        pic:'bois_de_marie.jpg',
+        lat:42.898234, 
+        lng:0.067935,
+    },
+    {
+        nom:'Eric & Marie D.',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-90291-1',
+        pic:'appt_ericmaried.jpg',
+        lat:42.889746, 
+        lng:-0.115991,
+    },
+    {
+        nom:'La Mongie 1900',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'OSMB-108617-1',
+        pic:'lamongie_1900-2.jpg',
+        lat:42.912008, 
+        lng:0.176309,
+    },
+    {
+        nom:'Balcons de Barèges',
+        type:'Appartement',
+        loc:'Barèges',
+        station:'Tourmalet',
+        ui:'OSMB-63024-1',
+        pic:'balcons_bareges.jpg',
+        lat:42.895490,
+        lng:0.061768,
+    },
+    {
+        nom:'Oursons 1',
+        type:'Appartement',
+        loc:'La Pierre St Martin',
+        station:'Lpsm',
+        ui:'OSMB-43309-1',
+        pic:'lesoursons1_appt203.jpg',
+        lat:42.978476, 
+        lng:-0.745650,
+    },
+    {
+        nom:'Oursons 2',
+        type:'Appartement',
+         loc:'La Pierre St Martin',
+        station:'Lpsm',
+        ui:'OSMB-43309-6',
+        pic:'lesoursons1_appt206.jpg',
+        lat:42.978476, 
+        lng:-0.745651,
+    },
+    {
+        nom:'Myrtilles 2',
+        type:'Appartement',
+        loc:'La Pierre St Martin',
+        station:'Lpsm',
+        ui:'OSMB-43324-1',
+        pic:'lesmyrtilles_2.jpg',
+        lat:42.976699, 
+        lng:-0.744734,
+    },
+    {
+        nom:'Estrelias',
+        type:'Maison',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-101074-1',
+        pic:'maisondevacs_estrelias.jpg',
+        lat:42.893193, 
+        lng:-0.117409,
+    },
+    {
+        nom:'Le Martin pêcheur',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'OSMB-43754-1',
+        pic:'studio_lemartinpecheur.jpg',
+        lat:43.065583, 
+        lng:0.151460,
+    },
+    {
+        nom:'Palmiers des vignaux 1',
+        type:'Appartement',
+        loc:'B. de Bigorre',
+        station:'Tourmalet',
+        ui:'OSMB-43754-2',
+        pic:'lespalmiersdesvignaux.jpg',
+        lat:43.066703,
+        lng: 0.148256,
+    },
+    {
+        nom:'Palmiers des vignaux 2',
+        type:'Appartement',
+        loc:'B. de Bigorre',
+        station:'Tourmalet',
+        ui:'OSMB-43754-3',
+        pic:'lespalmiersdesvignaux2.jpg',
+        lat:43.066632, 
+        lng:0.148260,
+    },
+    {
+        nom:'Palmiers des vignaux 3',
+        type:'Appartement',
+        loc:'B. de Bigorre',
+        station:'Tourmalet',
+        ui:'OSMB-43754-4',
+        pic:'lespalmiersdesvignaux3.jpg',
+        lat:43.066671, 
+        lng:0.148209,
+    },
+    {
+        nom:'Palmiers des vignaux 4',
+        type:'Appartement',
+        loc:'B. de Bigorre',
+        station:'Tourmalet',
+        ui:'OSMB-43754-5',
+        pic:'lespalmiersdesvignaux4.jpg',
+        lat:43.066650, 
+        lng:0.148279,
+    },
+    {
+        nom:'Le Lapiaz',
+        type:'Appartement',
+        loc:'La Pierre St Martin',
+        station:'Lpsm',
+        ui:'OSMB-43314-1',
+        pic:'chalet_le_lapiaz.jpg',
+        lat:42.977733, 
+        lng:-0.742571,
+    },
+    {
+        nom:'Myrtilles 3',
+        type:'Appartement',
+        loc:'La Pierre St Martin',
+        station:'Lpsm',
+        ui:'OSMB-47100-1',
+        pic:'lesmyrtilles_3.jpg',
+        lat:42.976736,
+        lng: -0.744646,
+    },
+    {
+        nom:'Myrtilles 4',
+        type:'Appartement',
+        loc:'La Pierre St Martin',
+        station:'Lpsm',
+        ui:'OSMB-47100-2',
+        pic:'lesmyrtilles_4.jpg',
+        lat:42.976657, 
+        lng:-0.744637,
+    },
+    {
+        nom:'Studio',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-71074-1',
+        pic:'studio_lafuentejc.jpg',
+        lat:42.891287, 
+        lng:-0.113549,
+    },
+    {
+        nom:'Oursons 2',
+        type:'Appartement',
+        loc:'La Pierre St Martin',
+        station:'Lpsm',
+        ui:'OSMB-47594-1',
+        pic:'lesoursonsII.jpg',
+        lat:42.977578, 
+        lng:-0.744298,
+    },
+    {
+        nom:'Gîte Lascurettes',
+        type:'Gîte',
+        loc:'Beost',
+        station:'Gourette',
+        ui:'OSMB-92421-1',
+        pic:'gite_lascurette.jpg',
+        lat:0,
+        lng:0,
+    },
+    {
+        nom:'Jean Michel C.',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-67557-1',
+        pic:'studio_jeanmichelc.jpg',
+        lat:42.890723, 
+        lng:-0.113322,
+    },
+    {
+        nom:'Plein Soleil',
+        type:'Appartement',
+        loc:'La Pierre St Martin',
+        station:'Lpsm',
+        ui:'OSMB-100218-1',
+        pic:'plein_soleil.jpg',
+        lat:42.977303, 
+        lng:-0.745014,
+    },
+    {
+        nom:'Club Engaly 2',
+        type:'Appartement',
+        loc:'Piau Engaly',
+        station:'Piau',
+        ui:'OSMB-63933-1',
+        pic:'club_engalyII_n61.jpg',
+        lat:42.783313, 
+        lng:0.159846,
+    },
+    {
+        nom:'Appartement cosy',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-73884-1',
+        pic:'appt_cosy_ctrville.jpg',
+        lat:42.887634, 
+        lng:-0.113883,
+    },
+    {
+        nom:'Appartement Mongie Tourmalet 1',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'OSMB-40205-1',
+        pic:'residence_mongietourmalet.jpg',
+        lat:42.908876, 
+        lng:0.166634,
+    },
+    {
+        nom:'Appartement Mongie Tourmalet 2',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'OSMB-40205-2',
+        pic:'residence_mongietourmalet2.jpg',
+        lat:42.908865, 
+        lng:0.166662,
+    },
+    {
+        nom:'Port Engaly 2',
+        type:'Appartement',
+        loc:'Piau Engaly',
+        station:'Piau',
+        ui:'OSMB-47485-1',
+        pic:'port_engaly2.jpg',
+        lat:42.784620, 
+        lng:0.157075,
+    },
+    {
+        nom:'Maison de Pierres',
+        type:'Maison',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-68287-1',
+        pic:'maison_pierres.jpg',
+        lat:42.812604, 
+        lng:0.496831,
+    },
+    {
+        nom:'Panoramic',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'Tourmalet',
+        ui:'OSMB-65727-1',
+        pic:'panoramic.jpg',
+        lat:0,
+        lng:0,
+    },
+    {
+        nom:'Escargot Bleu',
+        type:'Gîte',
+        loc:'Oloron Ste Marie',
+        station:'Lpsm',
+        ui:'OSMB-109227-1',
+        pic:'gite_escargot_bleu.jpg',
+        lat:43.180004,
+        lng: -0.640976,
+    },
+    {
+        nom:'Appartement Le Serias',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-109209-1',
+        pic:'residence_le_serias.jpg',
+        lat:42.791178,
+        lng: 0.446940,
+    },
+    {
+        nom:'Montana N314',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'La Mongie',
+        ui:'OSMB-92755-2',
+        pic:'montana_n314.jpg',
+        lat:42.908839, 
+        lng:0.167116,
+    },
+    {
+        nom:'Appartement Pied télécabine',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-71188-2',
+        pic:'appartementt2_piedtelecabine.jpg',
+        lat:42.890889, 
+        lng:-0.113267,
+    },
+    {
+        nom:'Résidence Les Myrtilles',
+        type:'Appartement',
+        loc:'La Pierre St Martin',
+        station:'Lpsm',
+        ui:'OSMB-63259-1',
+        pic:'residence_lesmyrtilles.jpg',
+        lat:42.976688,
+        lng:-0.744646,
+    },
+
+
+
+
+
+
+
+
+    
+
+
+];</script>
+<script>
+    let npyIdIntegration = "1331";
 let npyIdPanier = "VRpVVVU";
 let npyUi = "OSCH-72613";
 window.langue = "fr";
 
 const resortButtons = Array.from(document.querySelectorAll('.durationSelector'));
-const npyWrapper = document.querySelector('.promo');
+//change class from "promo" to "offer_annul"
+const npyWrapper = document.querySelector('.offer_annul');
 const npyWidgetWrapper = document.querySelector('.widget_resa');
+
+
+
+//Creation de la map
+var mymap = L.map('npyMap').setView([43.1731, -1.225], 5);
+
+
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoibnB5c2tpIiwiYSI6ImNrYXF4ZG0xZTA0OHozMW1zczNtY3R4YWoifQ.sI3nrGuPRzcU7FmPXXLFkA'
+}).addTo(mymap);
+
+let markersLayer = [];
+let mapBounds = []
+
 
 //Initialisation
 filterItemsByResort('all');
 
-function filterItemsByResort(choix){
-        npyWrapper.innerHTML='';
-          for (var i = 0; i < npySummerProm.length; i++) {
 
-            if((npySummerProm[i].station)===choix || choix==='all'){
+function filterItemsByResort(choix) {
+
+//Reinitialisation de la carte et des blocs
+    npyWrapper.innerHTML = '';
+    for (var i = 0; i < markersLayer.length; i++) {
+         mymap.removeLayer(markersLayer[i]);
+     } 
+    
+    for (var i = 0; i < npySummerProm.length; i++) {
+
+//creation des items   
+        if ((npySummerProm[i].station) === choix || choix === 'all') {
             let npyUrl = npySummerProm[i].ui;
             let nom = npySummerProm[i].nom;
             let npyBackground = npySummerProm[i].pic;
             let npyType = npySummerProm[i].type;
             let npyLoc = npySummerProm[i].loc;
-            let npyStation =npySummerProm[i].station;
-      
-            
+            let npyStation = npySummerProm[i].station;
+            let npyLat =npySummerProm[i].lat;
+            let npyLng =npySummerProm[i].lng;
 
-            let item =`<div class="cont_grid4 lgmt" data-resort="${npyStation}" data-img="${npyBackground}" data-lgmt="${npyUrl}" data-titre="${nom}" data-type="${npyType}" data-loc="${npyLoc}"><div class="cont_grid_item"><div class="cont_grid_img"><img class="npyImage" /></div><div class="cont_grid_text"><h3 class="cont_title cont_title3">${nom}</h3></div></div></div>`;
+            //delete class "cont_grid4"
+            let item = `<div class="lgmt" data-lat="${npyLat}" data-lng="${npyLng}" data-resort="${npyStation}" data-img="${npyBackground}" data-lgmt="${npyUrl}" data-titre="${nom}" data-type="${npyType}" data-loc="${npyLoc}"><div class="cont_grid_item"><div class="cont_grid_img"><img class="npyImage" /></div><div class="cont_grid_text"><h3 class="cont_title cont_title3">${nom}</h3></div></div></div>`;
             let textnode = document.createElement('div');
-            textnode.innerHTML = item;  
+            textnode.innerHTML = item;
             npyWrapper.appendChild(textnode);
-            }
-
-            else{}
-         } 
-
-         let createdItems = document.querySelectorAll('.lgmt');
-         let createdImages= Array.from(document.querySelectorAll('.npyImage'));
-         let itemLocs =Array.from(document.querySelectorAll('.cont_grid_text'));
-
-         for (var i = 0; i < createdItems.length; i++) {
-            let type = createdItems[i].dataset.type;
-            let loc = createdItems[i].dataset.loc;
-            let image = createdItems[i].dataset.img;
-            createdImages[i].src= 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/'+image;
-            
-            let itemLocsLieu = `<div class="cont_grid_baseline lieu"><img src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/gps.png"/><b>${loc}</b></div>`;
-            let itemLocsType =`<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/gps.png" /><b>${type}</b></div>`;
-            let itemLocsNodeLieu = document.createElement('div');
-            let itemLocsNodeType = document.createElement('div');
-            itemLocsNodeLieu.innerHTML = itemLocsLieu;
-            itemLocsNodeType.innerHTML= itemLocsType;
-            itemLocs[i].appendChild(itemLocsNodeLieu);
-            itemLocs[i].appendChild(itemLocsNodeType);
-            
-
-         }
+        } else {}
+    }
 
 
+    //Mise en tableau des items crees
+    let createdItems = document.querySelectorAll('.lgmt');
+    let createdImages = Array.from(document.querySelectorAll('.npyImage'));
+    let itemLocs = Array.from(document.querySelectorAll('.cont_grid_text'));
 
-         
+
+    //Remplissage des elements des items
+    for (let i = 0; i < createdItems.length; i++) {
 
 
-         createdItems.forEach(element => element.addEventListener("click",function(e){
-            npyWidgetWrapper.innerHTML='';
-            let npyUi = this.dataset.lgmt;
-            let res = npyUi.substring(0, 4);
-            console.log(res);
-            if(res==='OSMB'){
+        let type = createdItems[i].dataset.type;
+        let loc = createdItems[i].dataset.loc;
+        let image = createdItems[i].dataset.img;
+        let lat = createdItems[i].dataset.lat;
+        let lng = createdItems[i].dataset.lng;
+        let npyMapUi = createdItems[i].dataset.lgmt;
 
-            
+
+        let itemLocsLieu = `<div class="cont_grid_baseline lieu"><img src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/gps.png"/><b>${loc}</b></div>`;
+        let itemLocsType = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/gps.png" /><b>${type}</b></div>`;
+        
+        let itemLocsNodeLieu = document.createElement('div');
+        let itemLocsNodeType = document.createElement('div');
+
+        itemLocsNodeLieu.innerHTML = itemLocsLieu;
+        itemLocsNodeType.innerHTML = itemLocsType;
+
+        itemLocs[i].appendChild(itemLocsNodeLieu);
+        itemLocs[i].appendChild(itemLocsNodeType);
+
+        createdImages[i].src = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image;
+
+    //Creation des POIS ssur la map et centrage
+        if (lat==='0' && lng==='0'){
+
             }
             else{
-              let npyNom =this.dataset.titre;
+              let marker = L.marker([lat, lng]).addTo(mymap);
+              marker.bindPopup(`<p><img src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/${createdItems[i].dataset.img}" class="npyMapImg"></p><p><b>${type}</b><br>${loc}</p><p><a class="npyMapCta" href="https://www.n-py.com/fr/reservation?_wos=v2%2Cu%2C${npyUi}">En savoir +</a></p>`);
+              markersLayer.push(marker); 
+              mapBounds.push([lat,lng]);
+
+            }
+        
+        
+    };
+
+    mymap.invalidateSize();
+    mymap.fitBounds(mapBounds);
+
+
+//Remplissage img popups
+    let createdPopupsImages = Array.from(document.querySelectorAll('.npyMapImg'));
+     for (let i = 0; i < createdPopupsImages.length; i++) {
+        createdPopupsImages[i].src = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/'+ createdItems[i].dataset.img;
+     }
+    
+
+
+//Logique métier au clic sur les éléments
+    createdItems.forEach(element => element.addEventListener("click", function (e) {
+        npyWidgetWrapper.innerHTML = '';
+        let npyUi = this.dataset.lgmt;
+
+        let res = npyUi.substring(0, 4);
+        if (res === 'OSMB') {
+            location.href = `https://www.n-py.com/fr/reservation?_wos=v2%2Cu%2C${npyUi}`;
+
+        } else {
+            let npyNom = this.dataset.titre;
             let widgetHtml = `<h2 class="home_title">${npyNom}</b></h2><div id="widget-produit-${npyUi}" ></div>`;
             let npyWidget = document.createElement('div');
             npyWidget.innerHTML = widgetHtml;
             npyWidgetWrapper.appendChild(npyWidget);
-            let widgetProduit = AllianceReseaux.Widget.Instance( "Produit", { idPanier:npyIdPanier, idIntegration:npyIdIntegration, langue:"fr", ui:npyUi } );
+            let widgetProduit = AllianceReseaux.Widget.Instance("Produit", {
+                idPanier: npyIdPanier,
+                idIntegration: npyIdIntegration,
+                langue: "fr",
+                ui: npyUi
+            });
             widgetProduit.Initialise();
             scrollToElement('widget_resa');
-            }
-         }));
+        }
+    }));
 
-
+    
 }
 
- function scrollToElement(element){
+
+//Scroll au clic
+function scrollToElement(element) {
     window.scroll({
-              behavior: 'smooth',
-              left: 0,
-              // top gets the distance from the top of the page of our target element
-              top: document.getElementById(element).offsetTop
-            });
+        behavior: 'smooth',
+        left: 0,
+        // top gets the distance from the top of the page of our target element
+        top: document.getElementById(element).offsetTop
+    });
 };
 
-
 //Definition Duree
-resortButtons.forEach(element => element.addEventListener('click', function(e){
-let chosenResort= this.dataset.resort;
-for (var i = 0; i < resortButtons.length; i++) {
-    resortButtons[i].classList.remove('active');
-}
-this.classList.add('active');
-filterItemsByResort(chosenResort);
-
-//document.querySelector('iframe').src=`https://www.n-py.com/fr/${chosenResort}`;
-
+resortButtons.forEach(element => element.addEventListener('click', function (e) {
+    let chosenResort = this.dataset.resort;
+    for (var i = 0; i < resortButtons.length; i++) {
+        resortButtons[i].classList.remove('active');
+    }
+    this.classList.add('active');
+    filterItemsByResort(chosenResort);
+    mymap.setView([this.dataset.lat, this.dataset.long], 10);
 
 }));
 </script>
-</div>
-<link href="https://www.n-py.com/sites/n-py/files/commons/2017-2018/css/npy-elements.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
-         :root {
-  --red: #fb236a;
-  --blue:#003d7b;
-  --grey:#dceaf9;
-  --black:#242424;
-  --green:#1bc74e;
-  --bg-blue:#162238;
-  --radius:10px;
-  --shadow: 0px 0px 16px rgb(18, 26, 37);
-  --shadow-white : 5px 0px 18px rgba(0, 61, 123, 0.13);
-
-}
-
-
-/*==RESET PAGE==*/
-
-  #content-main {
-    background: #fff;
-}
-
-    .cont_grid6 img{
-        max-width: 100%
-    }
-
-    #content-top {
-        background: #fff !important;
-    }
-
-
-    /*============*/
-
-
-   
-
-  /*==SELECTEUR==*/
-
-.durationWrapper{
-    border-bottom:1px solid var(--grey);
-    width:100%;
-    display:flex;
-    justify-content: space-between;
-}
-
-.durationSelector{
-    padding-bottom:12px;
-    border-bottom:12px solid transparent;
-    transform: translateY(7px);
-}
-
-.durationSelector:hover{
-    color:var(--green);
-    font-weight:900;
-}
-
-.active{
-        color:var(--green);
-        border-bottom:12px solid var(--green);
-   }
-  
-.durationWrapper div:hover{
-        cursor:pointer;
-        font-weight: bold
-   }
-
-
-/*=== PARAMETRAGE ROWS FULLWIDTH===*/   
-
-
-
-    .npy_fullWidthBg
-        {
-            color:#003d7b;
-            width:100%;
-        }
-
-.npy_fullWidthBg .page-content-npy
-        {
-            width:90%;
-            margin:auto;
-        }
-
-        .npy_fullWidthBg .cont_grid3, .npy_fullWidthBg .cont_grid4, .npy_fullWidthBg .cont_grid6
-        {
-            padding:25px;
-        }
-
-
-.offer_annul {
-    padding: 40px 0;
-    width: 100%;
-}
-
-.widgetContainer{
-    background:#f7f5f5;
-    padding:80px 0px;
-}
-
-
-
-/*=== REASSURANCE===*/
-
-.npy_reassurance {
-    background: #ff6f5d;
-    font-size: 14px;
-    color: #fff;
-    padding: 2px;
-}
-
-
-
-
-/*=====MAP =====*/
-
-
-
- .map {
-    background-color: #CCCCCC;
-    position: sticky!important;
-    top: 0;
-    right: 0;
-    left: 0;
-  }
-}
-
-
-
-.offer_annul .cont_grid_img img {
-    max-width:100%;
-    border-radius: 5px 5px 0px 0px!important;
-
-  
-}
-
-.offer_annul .cont_grid_baseline{
-    font-size: 11px;
-    margin: 5px 5px 5px 0px!important;
-    display: inline-block;
-    border: 1px solid #7c96d175;
-    padding: 5px 10px;
-    border-radius: 50px;
-}
-
-.offer_annul .cont_grid_text div{
-    display:inline-block;
-}
-
-
-.offer_annul .cont_grid_baseline img{
-    height: 12px;
-    width: auto;
-    margin: 0px 7px 0px -3px;
-    transform: translateY(1px);
-
-}
-
-.offer_annul .cont_title3 {
-    font-weight: 900 !important;
-    font-size: 17px !important;
-    text-transform: none!important;
-}
-
-
-.offer_annul .cont_grid_item{
-  animation: Opacity .7s;
-}
-
-
-
-
-
-@keyframes Opacity {
-  from{
-    transform: translateY(10px);
-    opacity: 0
-  }
-
-  to{
-    transform: translateY(0px);
-    opacity: 1
-  }
-}
+    <link href="https://www.n-py.com/sites/n-py/files/commons/2017-2018/css/npy-elements.css" rel="stylesheet" type="text/css" />
     
-    
-
-
-
-
-
-
-.offer_annul .cont_grid_item:hover img{
-  opacity: 1!important;
-  cursor:pointer;
-}
-
-
-
-
-
-.offer_annul .npy_activ_title h3{
-    font-size: 17px;
-    text-transform: none;
-    padding: 0;
-    margin: 15px 0px 2px 0px;
-}
-
-.offer_annul .npy_activ_title p{
-    margin:0;
-    padding:0;
-}
-
-@media screen and (max-width: 900px) {
-    
-        .npy_map{
-            display:none;
-        }
-   }
-</style>
-
-
-
-
-
-
- 
