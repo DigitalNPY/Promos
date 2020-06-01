@@ -4,16 +4,17 @@ let npyUi = "OSCH-72613";
 window.langue = "fr";
 
 const resortButtons = Array.from(document.querySelectorAll('.durationSelector'));
+
+
 //change class from "promo" to "offer_annul"
 const npyWrapper = document.querySelector('.offer_annul');
 const npyWidgetWrapper = document.querySelector('.widget_resa');
 
 
-
 //Creation de la map
 var mymap = L.map('npyMap').setView([43.1731, -1.225], 5);
 
-
+//Chargement de Mapbox
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
@@ -27,7 +28,7 @@ let markersLayer = [];
 let mapBounds = []
 
 
-//Initialisation
+//Initialisation - Premier lancement de la fonction au chargement de la page
 filterItemsByResort('all',0);
 
 
@@ -107,14 +108,14 @@ function filterItemsByResort(choix, pers) {
 
         createdImages[i].src = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image;
 
-    //Creation des POIS ssur la map et centrage
+    //Creation des POIS ssur la map et centrage ICI ESSAYER DE CONVERTIR EN STRING
         if (lat==='0' && lng==='0'){
 
             }
             else{
               let marker = L.marker([lat, lng]).addTo(mymap);
-              let markerImgSrc = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image;
-              let markerLinkUrl = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + npyMapUi;
+              let markerImgSrc = ('https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image).toString();
+              let markerLinkUrl = ('https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + npyMapUi).toString();
               marker.bindPopup();
               marker.setPopupContent(`<p><img class="npyMapImg" src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/`+ image + `"></p><p><b>${type}</b><br>${loc}<br>${capacite} Pers. max</p><p><a class="npyMapCta" href="${markerLinkUrl}">En savoir +</a></p>`);
               markersLayer.push(marker); 
@@ -146,7 +147,7 @@ function filterItemsByResort(choix, pers) {
     for (var i = 0; i < createdMarkers.length; i++) {
 
     createdMarkers[i].dataset.img=createdItemsWithLocal[i].dataset.img;
-    createdMarkers[i].dataset.lgmt=createdItemsWithLocal[i].dataset.lgmt;       
+    createdMarkers[i].dataset.lgmt=createdItemsWithLocal[i].dataset.lgmt;         
     };
 
 

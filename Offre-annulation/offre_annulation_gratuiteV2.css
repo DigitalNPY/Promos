@@ -55,6 +55,7 @@ body {
             width: 100%;
             display: flex;
             justify-content: space-between;
+            margin : 50px 0px;
         }
 
         .durationWrapper.mobile {
@@ -358,6 +359,7 @@ body {
         @media screen and (max-width: 900px) {
             .durationWrapper.desktop {
                 display: none;
+
             }
 
             .durationWrapper.mobile {
@@ -402,6 +404,7 @@ body {
                 padding: inherit;
                 border-bottom: 0;
                 transform: none;
+                font-weight: bold
             }
 
             .durationWrapper.mobile .durationSelector.active {
