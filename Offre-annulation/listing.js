@@ -7,7 +7,10 @@ const npySummerProm=[
         ui:'OSCH-72613',
         pic:'maison-orride.jpg',
         lat:43.242881, 
-        lng:-0.607716
+        lng:-0.607716,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -18,7 +21,10 @@ const npySummerProm=[
         ui:'OSMB-64622',
         pic:'placeholder.jpg',
         lat:42.794963,
-        lng:0.443261
+        lng:0.443261,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -30,6 +36,9 @@ const npySummerProm=[
         pic:'maison_de_peyragudes.jpg',
         lat:0,
         lng:0,
+       capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -41,6 +50,9 @@ const npySummerProm=[
         pic:'agence_picdumidi.jpg',
         lat:0,
         lng:0,
+       capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -52,6 +64,9 @@ const npySummerProm=[
         pic:'domaine-ramonjuan.jpg',
         lat:42.988780,
         lng:0.109380,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -62,7 +77,10 @@ const npySummerProm=[
         ui:'AVAI-43796',
         pic:'meretgolf-pic.jpg',
         lat:42.910431,
-        lng:0.171008
+        lng:0.171008,
+       capacite:0,
+        tarif:'',
+        duree:'',
 
 
     },
@@ -74,7 +92,10 @@ const npySummerProm=[
         ui:'AVAI-43794',
         pic:'meretgolf-tourmalet.jpg',
         lat:42.911829,
-        lng:0.174001
+        lng:0.174001,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -86,6 +107,9 @@ const npySummerProm=[
         pic:'residence_richelieu.jpg',
         lat:0,
         lng:0,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -96,7 +120,10 @@ const npySummerProm=[
         ui:'OSMB-108746-1',
         pic:'residence_gascogne.jpg',
         lat:42.970744,
-        lng:-0.390991
+        lng:-0.390991,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -108,6 +135,9 @@ const npySummerProm=[
         pic:'hotel-boisjoli.jpg',
         lat:42.888554,
         lng:-0.113872,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -119,6 +149,9 @@ const npySummerProm=[
         pic:'hotel-carrepy.jpg',
         lat:43.055462,
         lng: 0.157509,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -130,6 +163,9 @@ const npySummerProm=[
         pic:'gite_la_maisonnee.jpg',
         lat:42.884124,
         lng: -0.025394,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -141,6 +177,9 @@ const npySummerProm=[
         pic:'camping_adour.jpg',
         lat:43.052779,
         lng: 0.159368,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -152,6 +191,9 @@ const npySummerProm=[
         pic:'camping-pibeste.jpg',
         lat:43.035626, 
         lng:-0.070879,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -163,6 +205,9 @@ const npySummerProm=[
         pic:'hotel-4ours.jpg',
         lat:42.783880, 
         lng:0.159078,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -174,6 +219,9 @@ const npySummerProm=[
         pic:'auberge-etable.jpg',
         lat:43.098069,
         lng:-0.817631,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -185,6 +233,9 @@ const npySummerProm=[
         pic:'agence_barroso.jpg',
         lat:0,
         lng:0,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -196,6 +247,9 @@ const npySummerProm=[
         pic:'residence_adrets.jpg',
         lat:42.796258,
         lng:0.438932,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -207,6 +261,9 @@ const npySummerProm=[
         pic:'appart_toit.jpg',
         lat:0,
         lng:0,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     {
@@ -218,6 +275,79 @@ const npySummerProm=[
         pic:'placeholder.jpg',
         lat:0,
         lng:0,
+        capacite:0,
+        tarif:'',
+        duree:'',
+
+    }, 
+    {
+        nom:'Agence Square Habitat Barèges',
+        type:'Appartement',
+        loc:'Barèges',
+        station:'Barèges',
+        ui:'HELI-69350',
+        pic:'placeholder.jpg',
+        lat:0,
+        lng:0,
+        capacite:0,
+        tarif:'',
+        duree:'',
+
+    },
+    {
+        nom:'Agence Square Habitat La Mongie',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'La Mongie',
+        ui:'HELI-69285',
+        pic:'placeholder.jpg',
+        lat:0,
+        lng:0,
+        capacite:0,
+        tarif:'',
+        duree:'',
+
+    },
+    {
+        nom:'Agence Square Habitat Luz',
+        type:'Appartement',
+        loc:'Luz',
+        station:'Luz',
+        ui:'HELI-69352',
+        pic:'placeholder.jpg',
+        lat:0,
+        lng:0,
+        capacite:0,
+        tarif:'',
+        duree:'',
+
+    },
+    {
+        nom:'Agence Square Habitat Cauterets',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'HELI-69351',
+        pic:'placeholder.jpg',
+        lat:0,
+        lng:0,
+        capacite:0,
+        tarif:'',
+        duree:'',
+
+    },
+    {
+        nom:'Agence Square Habitat Gourette',
+        type:'Appartement',
+        loc:'Gourette',
+        station:'Gourette',
+        ui:'HELI-69353',
+        pic:'placeholder.jpg',
+        lat:0,
+        lng:0,
+        capacite:0,
+        tarif:'',
+        duree:'',
 
     },
     
@@ -232,6 +362,9 @@ const npySummerProm=[
         pic:'arcizettes.jpg',
         lat:42.958021,
         lng:-0.333110,
+        capacite:4,
+        tarif:'120',
+        duree:'semaine',
 
     },
     {
@@ -243,6 +376,9 @@ const npySummerProm=[
         pic:'campbielh2.jpg',
         lat:42.784206, 
         lng:0.159462,
+        capacite:4,
+        tarif:'27',
+        duree:'nuit',
 
     },
     {
@@ -254,6 +390,9 @@ const npySummerProm=[
         pic:'ramondia405.jpg',
         lat:42.783694,
         lng: 0.161321,
+        capacite:4,
+        tarif:'250',
+        duree:'semaine',
 
     },
     {
@@ -265,6 +404,9 @@ const npySummerProm=[
         pic:'chalet72.jpg',
         lat:42.977093, 
         lng:-0.742837,
+        capacite:6,
+        tarif:'75',
+        duree:'nuit',
 
     },
     {
@@ -276,6 +418,9 @@ const npySummerProm=[
         pic:'mongie1900.jpg',
         lat:42.911939,
         lng:0.176423,
+        capacite:4,
+        tarif:'nuit',
+        duree:'nuit',
 
     },
     {
@@ -287,6 +432,9 @@ const npySummerProm=[
         pic:'neouvielle.jpg',
         lat:42.785044, 
         lng:0.158978,
+        capacite:8,
+        tarif:'95',
+        duree:'nuit',
 
     },
     {
@@ -298,6 +446,9 @@ const npySummerProm=[
         pic:'apptpascals.jpg',
         lat:42.895196, 
         lng:0.061583,
+        capacite:6,
+        tarif:'250',
+        duree:'semaine',
     },
     {
         nom:'Chateau de Beost',
@@ -308,6 +459,9 @@ const npySummerProm=[
         pic:'chateau_beost.jpg',
         lat:42.993772,
         lng:-0.415816,
+        capacite:7,
+        tarif:'60',
+        duree:'nuit',
     },
     {
         nom:'Appartement 5',
@@ -318,6 +472,9 @@ const npySummerProm=[
         pic:'appartement5.jpg',
         lat:42.891183, 
         lng:-0.117219,
+        capacite:5,
+        tarif:'60',
+        duree:'nuit',
     },
     {
         nom:'Michele S.',
@@ -328,6 +485,9 @@ const npySummerProm=[
         pic:'apptmicheles.jpg',
         lat:42.885210,
         lng: -0.111638,
+        capacite:4,
+        tarif:'450',
+        duree:'semaine',
     },
     {
         nom:'La Mongie 1800',
@@ -338,6 +498,9 @@ const npySummerProm=[
         pic:'mongie1800.jpg',
         lat:42.911990, 
         lng:0.176604,
+        capacite:4,
+        tarif:'50',
+        duree:'nuit',
     },
      {
         nom:'Lehailla',
@@ -348,6 +511,9 @@ const npySummerProm=[
         pic:'lehailla.jpg',
         lat:43.112639, 
         lng:0.203907,
+        capacite:5,
+        tarif:'320',
+         duree:'semaine',
     },
      {
         nom:'Maison Domer',
@@ -358,6 +524,9 @@ const npySummerProm=[
         pic:'maisondomer.jpg',
         lat:42.886800, 
         lng:-0.113727,
+        capacite:7,
+        tarif:'400',
+         duree:'semaine',
     },
      {
         nom:'Maison Domer 2',
@@ -368,6 +537,9 @@ const npySummerProm=[
         pic:'maisondomer2.jpg',
         lat:42.886800, 
         lng:-0.113728,
+        capacite:6,
+        tarif:'400',
+         duree:'semaine',
     },
      {
         nom:'Maison Domer 3',
@@ -378,6 +550,9 @@ const npySummerProm=[
         pic:'maisondomer3.jpg',
         lat:42.886800, 
         lng:-0.113729,
+        capacite:7,
+        tarif:'400',
+         duree:'semaine',
     },
      {
         nom:'Maison Domer 4',
@@ -388,6 +563,9 @@ const npySummerProm=[
         pic:'maisondomer4.jpg',
         lat:42.886800, 
         lng:-0.113730,
+        capacite:7,
+        tarif:'400',
+         duree:'semaine',
     },
     {
         nom:'Maison Domer 5',
@@ -398,6 +576,9 @@ const npySummerProm=[
         pic:'maisondomer5.jpg',
         lat:42.886800, 
         lng:-0.113731,
+        capacite:4,
+        tarif:'350',
+        duree:'semaine',
     },
     {
         nom:'Meublé Domer 1',
@@ -408,6 +589,9 @@ const npySummerProm=[
         pic:'meuble_domer.jpg',
         lat:42.886800, 
         lng:-0.113732,
+        capacite:8,
+        tarif:'600',
+        duree:'semaine',
     },
     {
         nom:'Meublé Domer 2',
@@ -418,6 +602,9 @@ const npySummerProm=[
         pic:'meuble_domer2.jpg',
         lat:42.886800, 
         lng:-0.113733,
+        capacite:6,
+        tarif:'400',
+        duree:'semaine',
     },
     {
         nom:'Jerome P.',
@@ -428,6 +615,9 @@ const npySummerProm=[
         pic:'apptjeromep.jpg',
         lat:43.063839,
         lng: 0.146531,
+        capacite:3,
+        tarif:'270',
+        duree:'semaine',
     },
     {
         nom:'Chantal D.',
@@ -438,6 +628,9 @@ const npySummerProm=[
         pic:'apptchantald.jpg',
         lat:42.887050,
         lng:-0.113088,
+        capacite:4,
+        tarif:'350',
+        duree:'semaine',
     },
     {
         nom:'Christophe D.',
@@ -448,6 +641,9 @@ const npySummerProm=[
         pic:'apptchristophed.jpg',
         lat:42.887409, 
         lng:-0.113220,
+        capacite:7,
+        tarif:'105',
+        duree:'nuit',
     },
     {
         nom:'Residence Le Mahourat',
@@ -458,6 +654,9 @@ const npySummerProm=[
         pic:'residence_le_mahourat.jpg',
         lat:42.977506,
         lng:-0.744980,
+        capacite:4,
+        tarif:'220',
+        duree:'semaine',
     },
     {
         nom:'Val Soleil',
@@ -468,6 +667,9 @@ const npySummerProm=[
         pic:'val_soleil.jpg',
         lat:42.959073,
         lng:-0.332202,
+        capacite:6,
+        tarif:'55',
+        duree:'nuit',
     },
     {
         nom:'Helios',
@@ -478,6 +680,9 @@ const npySummerProm=[
         pic:'helios.jpg',
         lat:42.896153,
         lng:0.061040,
+        capacite:6,
+        tarif:'53',
+        duree:'nuit',
     },
     {
         nom:'Gîte Campan',
@@ -488,6 +693,9 @@ const npySummerProm=[
         pic:'gite_campan.jpg',
         lat:43.007599,
         lng:0.187871,
+        capacite:6,
+        tarif:'85',
+        duree:'nuit',
     },
     {
         nom:'Les Myrtilles',
@@ -498,6 +706,9 @@ const npySummerProm=[
         pic:'lesmyrtilles.jpg',
         lat:42.977653, 
         lng:-0.744662,
+        capacite:4,
+        tarif:'250',
+        duree:'semaine',
     },
     {
         nom:'Chalet de montagne',
@@ -508,6 +719,9 @@ const npySummerProm=[
         pic:'chalet_de_montagnes.jpg',
         lat:42.966249, 
         lng:0.229813,
+        capacite:9,
+        tarif:'130',
+        duree:'semaine',
     },
     {
         nom:'Studio Cauterets',
@@ -518,6 +732,9 @@ const npySummerProm=[
         pic:'studio_cauterets.jpg',
         lat:42.888686, 
         lng:-0.113489,
+        capacite:3,
+        tarif:'220',
+        duree:'semaine',
     },
     {
         nom:'Club 2',
@@ -528,6 +745,9 @@ const npySummerProm=[
         pic:'clubII_n52.jpg',
         lat:42.783268, 
         lng:0.159856,
+        capacite:4,
+        tarif:'250',
+        duree:'semaine',
     },
     {
         nom:'Mongie Tourmalet',
@@ -538,6 +758,9 @@ const npySummerProm=[
         pic:'mongietourmalet.jpg',
         lat:42.909237, 
         lng:0.167143,
+        capacite:8,
+        tarif:'200',
+        duree:'semaine',
     },
     {
         nom:'Résidence Anglas',
@@ -548,6 +771,9 @@ const npySummerProm=[
         pic:'residence_anglas.jpg',
         lat:42.958202, 
         lng:-0.333473,
+        capacite:6,
+        tarif:'455',
+        duree:'semaine',
     },
     {
         nom:'Bero Bisto',
@@ -558,6 +784,9 @@ const npySummerProm=[
         pic:'bero_bisto_n7.jpg',
         lat:42.910905, 
         lng:0.174210,
+        capacite:6,
+        tarif:'50',
+        duree:'nuit',
     },
     {
         nom:'Myrtilles 1',
@@ -568,6 +797,9 @@ const npySummerProm=[
         pic:'myrtilles1.jpg',
         lat:42.782992,
         lng: 0.159415,
+        capacite:4,
+        tarif:'40',
+        duree:'nuit',
     },
     {
         nom:'Myrtilles 2',
@@ -578,6 +810,9 @@ const npySummerProm=[
         pic:'myrtilles1_surpistes.jpg',
         lat:42.782992,
         lng: 0.159415,
+        capacite:4,
+        tarif:'38',
+        duree:'nuit',
     },
     {
         nom:'Myrtilles 3',
@@ -588,6 +823,9 @@ const npySummerProm=[
         pic:'myrtilles1_surpistes.jpg',
         lat:42.782992,
         lng: 0.159415,
+        capacite:5,
+        tarif:'50',
+        duree:'nuit',
     },
     {
         nom:'Appartement centre-ville',
@@ -598,6 +836,9 @@ const npySummerProm=[
         pic:'appt_centreville.jpg',
         lat:42.887581, 
         lng:-0.113632,
+        capacite:4,
+        tarif:'300',
+        duree:'semaine',
     },
     {
         nom:'La bergerie',
@@ -608,6 +849,9 @@ const npySummerProm=[
         pic:'la_bergerie.jpg',
         lat:43.101881, 
         lng:0.075124,
+        capacite:6,
+        tarif:'84',
+        duree:'nuit',
     },
     {
         nom:'Bois de Marie',
@@ -618,6 +862,9 @@ const npySummerProm=[
         pic:'bois_de_marie.jpg',
         lat:42.898234, 
         lng:0.067935,
+        capacite:10,
+        tarif:'108',
+        duree:'nuit',
     },
     {
         nom:'Eric & Marie D.',
@@ -628,6 +875,9 @@ const npySummerProm=[
         pic:'appt_ericmaried.jpg',
         lat:42.889746, 
         lng:-0.115991,
+        capacite:6,
+        tarif:'90',
+        duree:'nuit',
     },
     {
         nom:'La Mongie 1900',
@@ -638,6 +888,9 @@ const npySummerProm=[
         pic:'lamongie_1900-2.jpg',
         lat:42.912008, 
         lng:0.176309,
+        capacite:5,
+        tarif:'200',
+        duree:'semaine',
     },
     {
         nom:'Balcons de Barèges',
@@ -648,6 +901,9 @@ const npySummerProm=[
         pic:'balcons_bareges.jpg',
         lat:42.895490,
         lng:0.061768,
+        capacite:4,
+        tarif:'200',
+        duree:'semaine',
     },
     {
         nom:'Oursons 1',
@@ -658,6 +914,9 @@ const npySummerProm=[
         pic:'lesoursons1_appt203.jpg',
         lat:42.978476, 
         lng:-0.745650,
+        capacite:4,
+        tarif:'40',
+        duree:'nuit',
     },
     {
         nom:'Oursons 2',
@@ -668,6 +927,9 @@ const npySummerProm=[
         pic:'lesoursons1_appt206.jpg',
         lat:42.978476, 
         lng:-0.745651,
+        capacite:4,
+        tarif:'40',
+        duree:'nuit',
     },
     {
         nom:'Myrtilles 2',
@@ -678,6 +940,9 @@ const npySummerProm=[
         pic:'lesmyrtilles_2.jpg',
         lat:42.976699, 
         lng:-0.744734,
+        capacite:4,
+        tarif:'75',
+        duree:'nuit',
     },
     {
         nom:'Estrelias',
@@ -688,6 +953,9 @@ const npySummerProm=[
         pic:'maisondevacs_estrelias.jpg',
         lat:42.893193, 
         lng:-0.117409,
+        capacite:10,
+        tarif:'320',
+        duree:'nuit',
     },
     {
         nom:'Le Martin pêcheur',
@@ -698,6 +966,9 @@ const npySummerProm=[
         pic:'studio_lemartinpecheur.jpg',
         lat:43.065583, 
         lng:0.151460,
+        capacite:4,
+        tarif:'190',
+        duree:'semaine',
     },
     {
         nom:'Palmiers des vignaux 1',
@@ -708,6 +979,9 @@ const npySummerProm=[
         pic:'lespalmiersdesvignaux.jpg',
         lat:43.066703,
         lng: 0.148256,
+        capacite:6,
+        tarif:'87',
+        duree:'nuit',
     },
     {
         nom:'Palmiers des vignaux 2',
@@ -718,6 +992,9 @@ const npySummerProm=[
         pic:'lespalmiersdesvignaux2.jpg',
         lat:43.066632, 
         lng:0.148260,
+        capacite:2,
+        tarif:'50',
+        duree:'nuit',
     },
     {
         nom:'Palmiers des vignaux 3',
@@ -728,6 +1005,9 @@ const npySummerProm=[
         pic:'lespalmiersdesvignaux3.jpg',
         lat:43.066671, 
         lng:0.148209,
+        capacite:2,
+        tarif:'50',
+        duree:'nuit',
     },
     {
         nom:'Palmiers des vignaux 4',
@@ -738,6 +1018,9 @@ const npySummerProm=[
         pic:'lespalmiersdesvignaux4.jpg',
         lat:43.066650, 
         lng:0.148279,
+        capacite:3,
+        tarif:'69',
+        duree:'nuit',
     },
     {
         nom:'Le Lapiaz',
@@ -748,6 +1031,9 @@ const npySummerProm=[
         pic:'chalet_le_lapiaz.jpg',
         lat:42.977733, 
         lng:-0.742571,
+        capacite:6,
+        tarif:'450',
+        duree:'semaine',
     },
     {
         nom:'Myrtilles 3',
@@ -758,6 +1044,9 @@ const npySummerProm=[
         pic:'lesmyrtilles_3.jpg',
         lat:42.976736,
         lng: -0.744646,
+        capacite:4,
+        tarif:'170',
+        duree:'semaine',
     },
     {
         nom:'Myrtilles 4',
@@ -768,6 +1057,9 @@ const npySummerProm=[
         pic:'lesmyrtilles_4.jpg',
         lat:42.976657, 
         lng:-0.744637,
+        capacite:4,
+        tarif:'170',
+        duree:'semaine',
     },
     {
         nom:'Studio',
@@ -778,6 +1070,9 @@ const npySummerProm=[
         pic:'studio_lafuentejc.jpg',
         lat:42.891287, 
         lng:-0.113549,
+        capacite:4,
+        tarif:'38',
+        duree:'nuit',
     },
     {
         nom:'Oursons 2',
@@ -788,6 +1083,9 @@ const npySummerProm=[
         pic:'lesoursonsII.jpg',
         lat:42.977578, 
         lng:-0.744298,
+        capacite:4,
+        tarif:'35',
+        duree:'nuit',
     },
     {
         nom:'Gîte Lascurettes',
@@ -798,6 +1096,9 @@ const npySummerProm=[
         pic:'gite_lascurette.jpg',
         lat:0,
         lng:0,
+        capacite:10,
+        tarif:'200',
+        duree:'nuit',
     },
     {
         nom:'Jean Michel C.',
@@ -808,6 +1109,9 @@ const npySummerProm=[
         pic:'studio_jeanmichelc.jpg',
         lat:42.890723, 
         lng:-0.113322,
+        capacite:3,
+        tarif:'45€',
+        duree:'nuit',
     },
     {
         nom:'Plein Soleil',
@@ -818,6 +1122,9 @@ const npySummerProm=[
         pic:'plein_soleil.jpg',
         lat:42.977303, 
         lng:-0.745014,
+        capacite:6,
+        tarif:'50',
+        duree:'nuit',
     },
     {
         nom:'Club Engaly 2',
@@ -828,6 +1135,9 @@ const npySummerProm=[
         pic:'club_engalyII_n61.jpg',
         lat:42.783313, 
         lng:0.159846,
+        capacite:4,
+        tarif:'250',
+        duree:'semaine',
     },
     {
         nom:'Appartement cosy',
@@ -838,6 +1148,9 @@ const npySummerProm=[
         pic:'appt_cosy_ctrville.jpg',
         lat:42.887634, 
         lng:-0.113883,
+        capacite:4,
+        tarif:'55',
+        duree:'nuit',
     },
     {
         nom:'Appartement Mongie Tourmalet 1',
@@ -848,6 +1161,9 @@ const npySummerProm=[
         pic:'residence_mongietourmalet.jpg',
         lat:42.908876, 
         lng:0.166634,
+        capacite:6,
+        tarif:'220',
+        duree:'semaine',
     },
     {
         nom:'Appartement Mongie Tourmalet 2',
@@ -858,6 +1174,9 @@ const npySummerProm=[
         pic:'residence_mongietourmalet2.jpg',
         lat:42.908865, 
         lng:0.166662,
+        capacite:4,
+        tarif:'180',
+        duree:'semaine',
     },
     {
         nom:'Port Engaly 2',
@@ -868,6 +1187,9 @@ const npySummerProm=[
         pic:'port_engaly2.jpg',
         lat:42.784620, 
         lng:0.157075,
+        capacite:7,
+        tarif:'210',
+        duree:'semaine',
     },
     {
         nom:'Maison de Pierres',
@@ -878,6 +1200,9 @@ const npySummerProm=[
         pic:'maison_pierres.jpg',
         lat:42.812604, 
         lng:0.496831,
+        capacite:6,
+        tarif:'360',
+        duree:'semaine',
     },
     {
         nom:'Panoramic',
@@ -888,6 +1213,9 @@ const npySummerProm=[
         pic:'panoramic.jpg',
         lat:0,
         lng:0,
+        capacite:5,
+        tarif:'250',
+        duree:'semaine',
     },
     {
         nom:'Escargot Bleu',
@@ -898,6 +1226,9 @@ const npySummerProm=[
         pic:'gite_escargot_bleu.jpg',
         lat:43.180004,
         lng: -0.640976,
+        capacite:4,
+        tarif:'95',
+        duree:'nuit',
     },
     {
         nom:'Appartement Le Serias',
@@ -908,6 +1239,9 @@ const npySummerProm=[
         pic:'residence_le_serias.jpg',
         lat:42.791178,
         lng: 0.446940,
+        capacite:8,
+        tarif:'500',
+        duree:'semaine',
     },
     {
         nom:'Montana N314',
@@ -918,6 +1252,9 @@ const npySummerProm=[
         pic:'montana_n314.jpg',
         lat:42.908839, 
         lng:0.167116,
+        capacite:4,
+        tarif:'400',
+        duree:'semaine',
     },
     {
         nom:'Appartement Pied télécabine',
@@ -928,6 +1265,9 @@ const npySummerProm=[
         pic:'appartementt2_piedtelecabine.jpg',
         lat:42.890889, 
         lng:-0.113267,
+        capacite:4,
+        tarif:'320',
+        duree:'semaine',
     },
     {
         nom:'Résidence Les Myrtilles',
@@ -938,7 +1278,232 @@ const npySummerProm=[
         pic:'residence_lesmyrtilles.jpg',
         lat:42.976688,
         lng:-0.744646,
+        capacite:4,
+        tarif:'',
+        duree:'',
     },
+    {
+        nom:'Mongie Tourmalet',
+        type:'Studio',
+        loc:'La Mongie',
+        station:'La Mongie',
+        ui:'OSMB-109624-1',
+        pic:'mongie-tourmalet.jpg',
+        lat:42.909463,
+        lng:0.167796,
+        capacite:4,
+        tarif:'195',
+        duree:'semaine',
+    },
+    {
+        nom:'Mongie Tourmalet',
+        type:'Studio',
+        loc:'La Mongie',
+        station:'La Mongie',
+        ui:'OSMB-109624-2',
+        pic:'mongie-tourmalet2.jpg',
+        lat:42.909463,
+        lng:0.167796,
+        capacite:4,
+        tarif:'220',
+        duree:'semaine',
+    },
+    {
+        nom:'Appartement 36m² - Parking - Cheminée',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-69994-1',
+        pic:'appartement-36m2.jpg',
+        lat:42.885360,
+        lng:-0.111724,
+        capacite:6,
+        tarif:'350',
+        duree:'semaine',
+    },
+    {
+        nom:'Myrtilles 2',
+        type:'Appartement',
+        loc:'Piau Engaly',
+        station:'Piau Engaly',
+        ui:'OSMB-109515-1',
+        pic:'myrtilles2.jpg',
+        lat:42.783604,
+        lng:0.158957,
+        capacite:5,
+        tarif:'150',
+        duree:'semaine',
+    },
+    {
+        nom:'T4 Lumineux 3 Chambres - 2 SDB - Plein centre et vue montage',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-73458-1',
+        pic:'appartement-t4.jpg',
+        lat:42.889714,
+        lng:-0.116591,
+        capacite:6,
+        tarif:'495',
+        duree:'semaine',
+    },
+    {
+        nom:'Les Arroques, Villa La Cordée - Wifi et Parking',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-35729-4',
+        pic:'les-arroques.jpg',
+        lat:42.891247,
+        lng:-0.110866,
+        capacite:7,
+        tarif:'485€',
+        duree:'semaine',
+    },
+    {
+        nom:'Le Mayouret, Villa La Cordée - Wifi et Parking',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-35729-1',
+        pic:'le-mayouret.jpg',
+        lat:42.891247,
+        lng:-0.110866,
+        capacite:6,
+        tarif:'485',
+        duree:'semaine',
+    },
+    {
+        nom:'Altitude 1800',
+        type:'Appartement',
+        loc:'La Mongie',
+        station:'La Mongie',
+        ui:'OSMB-52041-1',
+        pic:'altitude-1800.jpg',
+        lat:42.910656,
+        lng:0.173925,
+        capacite:6,
+        tarif:'200',
+        duree:'semaine',
+    },
+    {
+        nom:'Val Soleil',
+        type:'Studio',
+        loc:'Gourette',
+        station:'Gourette',
+        ui:'OSMB-109951-1',
+        pic:'val-soleil.jpg',
+        lat:42.959538,
+        lng:-0.330323,
+        capacite:4,
+        tarif:'110',
+        duree:'2 nuits',
+    },
+    {
+        nom:'Les Oursons II',
+        type:'Studio',
+        loc:'lpsm',
+        station:'lpsm',
+        ui:'OSMB-43605-1',
+        pic:'lesoursons2.jpg',
+        lat:42.978179,
+        lng:-0.746642,
+        capacite:4,
+        tarif:'170',
+        duree:'semaine',
+    },
+    {
+        nom:'Mongie Tourmalet',
+        type:'Studio',
+        loc:'La Mongie',
+        station:'La Mongie',
+        ui:'OSMB-109492-1',
+        pic:'mongie-tourmalet3.jpg',
+        lat:42.909433,
+        lng:0.167747,
+        capacite:5,
+        tarif:'240',
+        duree:'semaine',
+    },
+    {
+        nom:'Appartement 34m²',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-92781-1',
+        pic:'appartement34m2.jpg',
+        lat:42.896347,
+        lng:-0.115282,
+        capacite:5,
+        tarif:'300',
+        duree:'semaine',
+    },
+    {
+        nom:'Studio Centre Ville avec parking, ascenseur et wifi',
+        type:'Studio',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-100554-1',
+        pic:'studio-centreville.jpg',
+        lat:42.890008,
+        lng:-0.113860,
+        capacite:4,
+        tarif:'250',
+        duree:'semaine',
+    },
+    {
+        nom:'Myrtilles III',
+        type:'Studio',
+        loc:'Piau Engaly',
+        station:'Piau Engaly',
+        ui:'OSMB-64457-1',
+        pic:'myrtilles3.jpg',
+        lat:42.783604,
+        lng:0.158957,
+        capacite:4,
+        tarif:'',
+        duree:'',
+    },
+    {
+        nom:'Valnéa',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-69002-1',
+        pic:'valnea.jpg',
+        lat:42.790074,
+        lng:0.445631,
+        capacite:6,
+        tarif:'400',
+        duree:'semaine',
+    },
+    {
+        nom:'Appartement neuf tout confort à 5min du centre ville',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-66083-1',
+        pic:'appartement-confort.jpg',
+        lat:42.885916,
+        lng:-0.112204,
+        capacite:6,
+        tarif:'550',
+        duree:'semaine'
+    },
+    {
+        nom:'APPARTEMENT CENTRE VILLE REFAIT À NEUF ',
+        type:'Appartement',
+        loc:'Cauterets',
+        station:'Cauterets',
+        ui:'OSMB-72743-1',
+        pic:'appartement_centreville.jpg',
+        lat:42.887092,
+        lng:-0.113118,
+        capacite:4,
+        tarif:'300',
+        duree:'semaine',
+    },
+
 
 
 

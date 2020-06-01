@@ -28,10 +28,10 @@ let mapBounds = []
 
 
 //Initialisation
-filterItemsByResort('all');
+filterItemsByResort('all',0);
 
 
-function filterItemsByResort(choix) {
+function filterItemsByResort(choix, pers) {
 
 //Reinitialisation de la carte et des blocs
     npyWrapper.innerHTML = '';
@@ -49,11 +49,15 @@ function filterItemsByResort(choix) {
             let npyType = npySummerProm[i].type;
             let npyLoc = npySummerProm[i].loc;
             let npyStation = npySummerProm[i].station;
+            let npyCap = npySummerProm[i].capacite;
+            let npyPrix = npySummerProm[i].tarif;
+            let npyDuree = npySummerProm[i].duree;
             let npyLat =npySummerProm[i].lat;
             let npyLng =npySummerProm[i].lng;
 
+
             //delete class "cont_grid4"
-            let item = `<div class="lgmt" data-lat="${npyLat}" data-lng="${npyLng}" data-resort="${npyStation}" data-img="${npyBackground}" data-lgmt="${npyUrl}" data-titre="${nom}" data-type="${npyType}" data-loc="${npyLoc}"><div class="cont_grid_item"><div class="cont_grid_img"><img class="npyImage" /></div><div class="cont_grid_text"><h3 class="cont_title cont_title3">${nom}</h3></div></div></div>`;
+            let item = `<div class="lgmt" data-prix="${npyPrix}" data-duree="${npyDuree}" data-cap="${npyCap}" data-lat="${npyLat}" data-lng="${npyLng}" data-resort="${npyStation}" data-img="${npyBackground}" data-lgmt="${npyUrl}" data-titre="${nom}" data-type="${npyType}" data-loc="${npyLoc}"><div class="cont_grid_item"><div class="cont_grid_img"><img class="npyImage" /></div><div class="cont_grid_text"><h3 class="cont_title cont_title3">${nom}</h3></div></div></div>`;
             let textnode = document.createElement('div');
             textnode.innerHTML = item;
             npyWrapper.appendChild(textnode);
@@ -76,20 +80,30 @@ function filterItemsByResort(choix) {
         let image = createdItems[i].dataset.img;
         let lat = createdItems[i].dataset.lat;
         let lng = createdItems[i].dataset.lng;
+        let prix = createdItems[i].dataset.prix;
+        let duree = createdItems[i].dataset.duree;
         let npyMapUi = createdItems[i].dataset.lgmt;
+        let capacite = createdItems[i].dataset.cap;
 
-
-        let itemLocsLieu = `<div class="cont_grid_baseline lieu"><img src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/gps.png"/><b>${loc}</b></div>`;
-        let itemLocsType = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/gps.png" /><b>${type}</b></div>`;
+        let itemLocsPrice = `<div class="price"><p><span>${prix}€</span> par ${duree}</p></div>`
+        let itemLocsLieu = `<div class="cont_grid_baseline lieu"><img src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyPin.png"/><b>${loc}</b></div>`;
+        let itemLocsType = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyMaison.png" /><b>${type}</b></div>`;
+        let itemLocsCap = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyPers.png" /><b>${capacite} Pers. Max</b></div>`;
         
+        let itemLocsNodePrice = document.createElement('div');
         let itemLocsNodeLieu = document.createElement('div');
         let itemLocsNodeType = document.createElement('div');
+        let itemLocsNodeCap = document.createElement('div');
 
+        itemLocsNodePrice.innerHTML = itemLocsPrice;
         itemLocsNodeLieu.innerHTML = itemLocsLieu;
         itemLocsNodeType.innerHTML = itemLocsType;
+        itemLocsNodeCap.innerHTML = itemLocsCap;
 
+        itemLocs[i].appendChild(itemLocsNodePrice);
         itemLocs[i].appendChild(itemLocsNodeLieu);
         itemLocs[i].appendChild(itemLocsNodeType);
+        itemLocs[i].appendChild(itemLocsNodeCap);
 
         createdImages[i].src = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image;
 
@@ -99,7 +113,10 @@ function filterItemsByResort(choix) {
             }
             else{
               let marker = L.marker([lat, lng]).addTo(mymap);
-              marker.bindPopup(`<p><img class="npyMapImg"></p><p><b>${type}</b><br>${loc}</p><p><a class="npyMapCta" href="https://www.n-py.com/fr/reservation?_wos=v2%2Cu%2C${npyUi}">En savoir +</a></p>`);
+              let markerImgSrc = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image;
+              let markerLinkUrl = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + npyMapUi;
+              marker.bindPopup();
+              marker.setPopupContent(`<p><img class="npyMapImg" src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/`+ image + `"></p><p><b>${type}</b><br>${loc}<br>${capacite} Pers. max</p><p><a class="npyMapCta" href="${markerLinkUrl}">En savoir +</a></p>`);
               markersLayer.push(marker); 
               mapBounds.push([lat,lng]);
 
@@ -110,19 +127,34 @@ function filterItemsByResort(choix) {
 
     mymap.invalidateSize();
     mymap.fitBounds(mapBounds);
-    let createdMarkers = Array.from(document.querySelectorAll('.leaflet-marker-icon'));
-    for (var i = 0; i < createdMarkers.length; i++) {
-        createdMarkers[i].dataset.img=createdItems[i].dataset.img;
+
+
+//Creation d'un tableau comprenant uniquement les elements localises sur la map
+    let createdItemsWithLocal =[];
+    for (var i = 0; i < createdItems.length; i++) {
+        if(createdItems[i].dataset.lat==='0'){
+           
+        }
+        else{
+          createdItemsWithLocal.push(createdItems[i])
+        }
     }
-    console.log(createdMarkers)
 
-    
+//Assignation des data images et url aux points sur la carte
+    let createdMarkers = Array.from(document.querySelectorAll('.leaflet-marker-icon'));
+
+    for (var i = 0; i < createdMarkers.length; i++) {
+
+    createdMarkers[i].dataset.img=createdItemsWithLocal[i].dataset.img;
+    createdMarkers[i].dataset.lgmt=createdItemsWithLocal[i].dataset.lgmt;       
+    };
 
 
-//Remplissage img popups
-    
-       createdMarkers.forEach(element => element.addEventListener("click", function (e) {
-        document.querySelector('.npyMapImg').src=this.dataset.img;
+//Remplissage img popups    
+    createdMarkers.forEach(marker => marker.addEventListener('click', function(){
+    console.log(this.dataset.img);
+    console.log(this.dataset.lgmt);
+        
        }));
     
 
