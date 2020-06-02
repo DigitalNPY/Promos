@@ -4,6 +4,8 @@ let npyUi = "OSCH-72613";
 window.langue = "fr";
 
 const resortButtons = Array.from(document.querySelectorAll('.durationSelector'));
+let nbPers = 0;
+let chosenResort = 'all';
 
 
 //change class from "promo" to "offer_annul"
@@ -86,10 +88,10 @@ function filterItemsByResort(choix, pers) {
         let npyMapUi = createdItems[i].dataset.lgmt;
         let capacite = createdItems[i].dataset.cap;
 
-        let itemLocsPrice = `<div class="price"><p><span>${prix}€</span> par ${duree}</p></div>`
-        let itemLocsLieu = `<div class="cont_grid_baseline lieu"><img src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyPin.png"/><b>${loc}</b></div>`;
-        let itemLocsType = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyMaison.png" /><b>${type}</b></div>`;
-        let itemLocsCap = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyPers.png" /><b>${capacite} Pers. Max</b></div>`;
+        let itemLocsPrice = `<div class="price"><p><span class="npyFrom">À partir de</span><br><span>${prix}€</span> par ${duree}</p></div>`
+        let itemLocsLieu = `<div class="cont_grid_baseline lieu"><img src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyPin2.png"/><b>${loc}</b></div>`;
+        let itemLocsType = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyMaison2.png" /><b>${type}</b></div>`;
+        let itemLocsCap = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyPerson2.png" /><b>${capacite} Pers. Max</b></div>`;
         
         let itemLocsNodePrice = document.createElement('div');
         let itemLocsNodeLieu = document.createElement('div');
@@ -117,7 +119,7 @@ function filterItemsByResort(choix, pers) {
               let markerImgSrc = ('https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image).toString();
               let markerLinkUrl = ('https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + npyMapUi).toString();
               marker.bindPopup();
-              marker.setPopupContent(`<p><img class="npyMapImg" src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/`+ image + `"></p><p><b>${type}</b><br>${loc}<br>${capacite} Pers. max</p><p><a class="npyMapCta" href="${markerLinkUrl}">En savoir +</a></p>`);
+              marker.setPopupContent(`<p><img id="npyMapImg" data-url="${npyMapUi}" data-img="${image}" src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/placeholder.jpg"></p><p><b>${type}</b><br>${loc}<br>${capacite} Pers. max</p><p><a class="npyMapCta" id="npyMapCta" >En savoir +</a></p>`);
               markersLayer.push(marker); 
               mapBounds.push([lat,lng]);
 
@@ -152,13 +154,27 @@ function filterItemsByResort(choix, pers) {
 
 
 //Remplissage img popups    
-    createdMarkers.forEach(marker => marker.addEventListener('click', function(){
+    createdMarkers.forEach(marker => marker.addEventListener('click', function(e){
     console.log(this.dataset.img);
     console.log(this.dataset.lgmt);
-        
+
        }));
     
+    createdMarkers.forEach(marker => marker.addEventListener('click', function(e){
+    setTimeout(delayIt,1000);
 
+       }));
+
+
+    //
+
+    function delayIt(e){
+        let imageBubble = document.querySelector('#npyMapImg');
+        let linkBubble = document.querySelector('#npyMapCta');
+        imageBubble.src = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + imageBubble.dataset.img;
+        linkBubble.href = 'https://www.n-py.com/fr/reservation?_wos=v2%2Cu%2C' + imageBubble.dataset.url;
+
+        }
 
 //Logique métier au clic sur les éléments
     createdItems.forEach(element => element.addEventListener("click", function (e) {
@@ -202,7 +218,7 @@ function scrollToElement(element) {
 
 //Definition Duree
 resortButtons.forEach(element => element.addEventListener('click', function (e) {
-    let chosenResort = this.dataset.resort;
+    chosenResort = this.dataset.resort;
     for (var i = 0; i < resortButtons.length; i++) {
         resortButtons[i].classList.remove('active');
     }

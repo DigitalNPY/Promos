@@ -8,9 +8,9 @@ const npySummerProm=[
         pic:'maison-orride.jpg',
         lat:43.242881, 
         lng:-0.607716,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:2,
+        tarif:'80',
+        duree:'nuit',
 
     },
     {
@@ -22,9 +22,9 @@ const npySummerProm=[
         pic:'placeholder.jpg',
         lat:42.794963,
         lng:0.443261,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:2,
+        tarif:'80',
+        duree:'nuit',
 
     },
     {
@@ -36,12 +36,12 @@ const npySummerProm=[
         pic:'maison_de_peyragudes.jpg',
         lat:0,
         lng:0,
-       capacite:0,
-        tarif:'',
-        duree:'',
+       capacite:4,
+        tarif:'160',
+        duree:'semaine',
 
     },
-    {
+    /*{
         nom:'Agence pic du midi',
         type:'Appartements',
         loc:'La Mongie',
@@ -50,11 +50,11 @@ const npySummerProm=[
         pic:'agence_picdumidi.jpg',
         lat:0,
         lng:0,
-       capacite:0,
+       capacite:4,
         tarif:'',
         duree:'',
 
-    },
+    },*/
     {
         nom:'Hostellerie de Ramonjuan',
         type:'Hotels / Chambres d\'hôtes',
@@ -64,9 +64,9 @@ const npySummerProm=[
         pic:'domaine-ramonjuan.jpg',
         lat:42.988780,
         lng:0.109380,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:2,
+        tarif:'84',
+        duree:'nuit',
 
     },
     {
@@ -78,9 +78,9 @@ const npySummerProm=[
         pic:'meretgolf-pic.jpg',
         lat:42.910431,
         lng:0.171008,
-       capacite:0,
-        tarif:'',
-        duree:'',
+       capacite:4,
+        tarif:'99',
+        duree:'nuit',
 
 
     },
@@ -93,9 +93,9 @@ const npySummerProm=[
         pic:'meretgolf-tourmalet.jpg',
         lat:42.911829,
         lng:0.174001,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'67',
+        duree:'nuit',
 
     },
     {
@@ -103,29 +103,96 @@ const npySummerProm=[
         type:'Appartements',
         loc:'La Pierre St Martin',
         station:'Lpsm',
-        ui:'OSMB-35536',
+        ui:'OSMB-35536-1',
         pic:'residence_richelieu.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:18,
+        tarif:'1500',
+        duree:'semaine',
 
     },
     {
-        nom:'Résidence Gascogne',
+        nom:'Résidence Gascogne 1',
         type:'Appartements',
-        loc:'Gourette',
+        loc:'Eaux-Bonnes',
         station:'Gourette',
-        ui:'OSMB-108746-1',
+        ui:'OSMB-108746-2',
         pic:'residence_gascogne.jpg',
         lat:42.970744,
         lng:-0.390991,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:15,
+        tarif:'1625',
+        duree:'semaine',
 
     },
+    {
+        nom:'Résidence Gascogne 2',
+        type:'Appartements',
+        loc:'Eaux-Bonnes',
+        station:'Gourette',
+        ui:'OSMB-108746-1',
+        pic:'residence_gascogne.jpg',
+        lat:42.970658, 
+        lng:-0.391043,
+        capacite:15,
+        tarif:'1625',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Résidence Gascogne 3',
+        type:'Appartements',
+        loc:'Eaux-Bonnes',
+        station:'Gourette',
+        ui:'OSMB-108746-1',
+        pic:'residence_gascogne.jpg',
+        lat:42.970602, 
+        lng:-0.391296,
+        capacite:15,
+        tarif:'1625',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Résidence Gascogne 4',
+        type:'Appartements',
+        loc:'Eaux-Bonnes',
+        station:'Gourette',
+        ui:'OSMB-108746-1',
+        pic:'residence_gascogne.jpg',
+        lat:42.970567, 
+        lng:-0.391129,
+        capacite:15,
+        tarif:'1625',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Résidence Gascogne 5',
+        type:'Appartements',
+        loc:'Eaux-Bonnes',
+        station:'Gourette',
+        ui:'OSMB-108746-1',
+        pic:'residence_gascogne.jpg',
+        lat:42.970592, 
+        lng:-0.391023,
+        capacite:15,
+        tarif:'1625',
+        duree:'semaine',
+
+    },
+
+
+
+
+
+
+
+
+
+
+
     {
         nom:'Le Bois Joli',
         type:'Hotels / Chambres d\'hôtes',
@@ -135,9 +202,9 @@ const npySummerProm=[
         pic:'hotel-boisjoli.jpg',
         lat:42.888554,
         lng:-0.113872,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:2,
+        tarif:'120',
+        duree:'nuit',
 
     },
     {
@@ -149,9 +216,9 @@ const npySummerProm=[
         pic:'hotel-carrepy.jpg',
         lat:43.055462,
         lng: 0.157509,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:2,
+        tarif:'85',
+        duree:'nuit',
 
     },
     {
@@ -163,9 +230,9 @@ const npySummerProm=[
         pic:'gite_la_maisonnee.jpg',
         lat:42.884124,
         lng: -0.025394,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'94',
+        duree:'nuit',
 
     },
     {
@@ -177,9 +244,9 @@ const npySummerProm=[
         pic:'camping_adour.jpg',
         lat:43.052779,
         lng: 0.159368,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'275',
+        duree:'semaine',
 
     },
     {
@@ -191,9 +258,9 @@ const npySummerProm=[
         pic:'camping-pibeste.jpg',
         lat:43.035626, 
         lng:-0.070879,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'448',
+        duree:'semaine',
 
     },
     {
@@ -205,12 +272,12 @@ const npySummerProm=[
         pic:'hotel-4ours.jpg',
         lat:42.783880, 
         lng:0.159078,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:2,
+        tarif:'413',
+        duree:'semaine',
 
     },
-    {
+   /* {
         nom:'Auberge de l\'étable',
         type:'Hotels / Chambres d\'hôtes',
         loc:'Montory',
@@ -223,7 +290,7 @@ const npySummerProm=[
         tarif:'',
         duree:'',
 
-    },
+    },*/
     {
         nom:'Selection Agence Barroso',
         type:'Hotels / Chambres d\'hôtes',
@@ -233,12 +300,12 @@ const npySummerProm=[
         pic:'agence_barroso.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'307',
+        duree:'semaine',
 
     },
-    {
+    /*{
         nom:'Les Adrets',
         type:'Résidences de tourisme',
         loc:'Peyragudes',
@@ -251,9 +318,9 @@ const npySummerProm=[
         tarif:'',
         duree:'',
 
-    },
-    {
-        nom:'Appartement Toit',
+    },*/
+    /*{
+        nom:'Hameau de Balestas',
         type:'Résidences de tourisme',
         loc:'Peyragudes',
         station:'Peyragudes',
@@ -265,89 +332,89 @@ const npySummerProm=[
         tarif:'',
         duree:'',
 
-    },
+    },*/
     {
         nom:'Sélection Page Immobilier',
         type:'Appartement',
         loc:'Cauterets',
         station:'Cauterets',
-        ui:'OSMB-109565',
-        pic:'placeholder.jpg',
+        ui:'HELI-93487',
+        pic:'page_immo.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:'3 à 12',
+        tarif:'225',
+        duree:'semaine',
 
     }, 
     {
-        nom:'Agence Square Habitat Barèges',
+        nom:'Sélection Square Habitat Barèges',
         type:'Appartement',
         loc:'Barèges',
         station:'Barèges',
         ui:'HELI-69350',
-        pic:'placeholder.jpg',
+        pic:'square_bareges.jpg',
         lat:0,
         lng:0,
         capacite:0,
-        tarif:'',
+        tarif:'381',
         duree:'',
 
     },
     {
-        nom:'Agence Square Habitat La Mongie',
+        nom:'Sélection Square Habitat La Mongie',
         type:'Appartement',
         loc:'La Mongie',
         station:'La Mongie',
         ui:'HELI-69285',
-        pic:'placeholder.jpg',
+        pic:'square_lamongie.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:6,
+        tarif:'381',
+        duree:'semaine',
 
     },
     {
-        nom:'Agence Square Habitat Luz',
+        nom:'Sélection Square Habitat Luz',
         type:'Appartement',
         loc:'Luz',
         station:'Luz',
         ui:'HELI-69352',
-        pic:'placeholder.jpg',
+        pic:'square_luz.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'315',
+        duree:'semaine',
 
     },
     {
-        nom:'Agence Square Habitat Cauterets',
+        nom:'Sélection Square Habitat Cauterets',
         type:'Appartement',
         loc:'Cauterets',
         station:'Cauterets',
         ui:'HELI-69351',
-        pic:'placeholder.jpg',
+        pic:'square_cauterets.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'381',
+        duree:'semaine',
 
     },
     {
-        nom:'Agence Square Habitat Gourette',
+        nom:'Sélection Square Habitat Gourette',
         type:'Appartement',
         loc:'Gourette',
         station:'Gourette',
         ui:'HELI-69353',
-        pic:'placeholder.jpg',
+        pic:'square_gourette.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'290',
+        duree:'semaine',
 
     },
     

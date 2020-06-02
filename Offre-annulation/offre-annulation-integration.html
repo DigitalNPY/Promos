@@ -1,21 +1,31 @@
+
 <div class="npy_fullWidthBg">
     <div class="page-content-npy">
-        <section class="cont_row">
+        <section class="cont_row" style="text-align:center">
+            <img src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/title2.jpg" alt="Cet été, on vous couvre">
             <h2>Réservez votre séjour pour cet été avec l&#39;esprit libre !</h2>
-            <p><span class="npy_reassurance">Offre flex</span> <span class="npy_reassurance">Annulation jusqu&#39;à j-5 offerte</span> <span class="npy_reassurance">Remboursement sous 15 jours</span></p>
-            <p><b>Pour votre séjour du premier mai au 15 septembre 2020, ne vous souciez plus d&rsquo;une éventuelle annulation !</b></p>
+            <div class="npyReassurWrapper">
+                <div class="npy_reassurance"><img src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/flex2.png">Offre <b>flex</b></div>
+                   <div class="npy_reassurance"><img src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/cancel2.png"> Annulation jusqu&#39;à j-5 <b>offerte</b></div>
+                   <div class="npy_reassurance"><img src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/refund2.png"> Remboursement <b>sous 15 jours</b></div>
+            </div>
+            <div class="textPrez">
+                <p><b>Pour votre séjour du premier mai au 15 septembre 2020, ne vous souciez plus d&rsquo;une éventuelle annulation !</b></p>
             <p>
                 Pour tout contretemps ou souci lié au Covid-19 (restriction de déplacement, symptômes avérés, mise en quarantaine etc... ) les hébergeurs ci-dessous font preuve de flexibilité en vous proposant d&rsquo;annuler votre séjour
                 jusqu&rsquo;à J-5, sans frais ! Vous serez remboursé(e) à 100% sous 15 jours.
             </p>
+            </div>
+
         </section>
     </div>
 </div>
 <div class="npy_fullWidthBg">
     <div class="page-content-npy">
         <section class="cont_row npy_offerHeader">
+            <h3 style="text-align:center"><b>Sélectionnez votre station :</b></h3>
             <div class="durationWrapper desktop">
-                <div class="durationSelector" data-lat="42.888562" data-long="-0.114409" data-resort="all">Tous</div>
+                <div class="durationSelector active" data-lat="42.888562" data-long="-0.114409" data-resort="all">Tous</div>
                 <div class="durationSelector" data-lat="42.888562" data-long="-0.114409" data-resort="Cauterets">Cauterets</div>
                 <div class="durationSelector" data-lat="42.958567" data-long="-0.332481" data-resort="Gourette">Gourette</div>
                 <div class="durationSelector" data-lat="42.977999" data-long="-0.746738" data-resort="Lpsm">
@@ -83,7 +93,8 @@
             <div class="cont_grid4 npy_map"><div id="npyMap"></div></div>
             <!-- delete div.cont_wrapper.promo
                      delete section.cont_row.offer_annul
-                     change from div.cont_grid8 to div.cont_grid8.offer_annul -->
+                     change from div.cont_grid8 to div.cont_grid8.offer_annul
+                -->
             <div class="cont_grid8 offer_annul"></div>
         </section>
     </div>
@@ -94,8 +105,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
-    <style>
-      
+    <style type="text/css">
+     
+
 
 :root {
             --red: #fb236a;
@@ -137,6 +149,7 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
+            margin : 50px 0px;
         }
 
         .durationWrapper.mobile {
@@ -162,6 +175,13 @@
         .durationWrapper div:hover {
             cursor: pointer;
             font-weight: bold;
+        }
+
+        /*=== INTRO ===*/
+
+        .textPrez{
+            max-width:60%;
+            margin: auto;
         }
 
         /*=== PARAMETRAGE ROWS FULLWIDTH===*/
@@ -199,10 +219,16 @@
         /*=== REASSURANCE===*/
 
         .npy_reassurance {
-            background: #ff6f5d;
-            font-size: 14px;
-            color: #fff;
-            padding: 2px;
+            font-size: 16px;
+           display: inline-block;
+            padding: 14px;
+        }
+
+        .npy_reassurance img {
+            max-height: 18px;
+            width:auto;
+            margin-right:5px;
+
         }
 
         /*=====MAP =====*/
@@ -292,6 +318,16 @@
 
         /*=====ITEMS====*/
 
+
+         .npy_offerHeader h3{
+            color:var(--salmon);
+        }
+
+
+      .npyReassurWrapper {
+            padding: 30px 0px;
+        }
+
         .offer_annul > div .lgmt,
         .offer_annul > div .lgmt .cont_grid_item {
             height: 100%;
@@ -345,6 +381,12 @@
         .offer_annul .price span{
             font-weight:bold;
             font-size: 16px;
+            color:var(--salmon);
+        }
+
+        .npyFrom{
+            font-size:10px!important;
+            color:#021f38!important;
         }
 
         .offer_annul .cont_grid_baseline {
@@ -390,8 +432,12 @@
             }
         }
 
+        .offer_annul .cont_grid_item:hover {
+            cursor: pointer;
+        }    
+
         .offer_annul .cont_grid_item:hover img {
-            opacity: 1 !important;
+            opacity: 0.9 !important;
             cursor: pointer;
         }
 
@@ -422,6 +468,17 @@
         }
 
         @media screen and (max-width: 1080px) {
+            
+            .banner-main-title{
+                display:none;
+            }
+
+            .npy_reassurance {
+            
+                display:block;
+                text-align:center;
+            }
+
             .npy_message .cont_grid3 {
                 display: none;
             }
@@ -438,8 +495,16 @@
         }
 
         @media screen and (max-width: 900px) {
+           
+             .textPrez{
+            max-width:80%;
+            
+            }   
+
+
             .durationWrapper.desktop {
                 display: none;
+
             }
 
             .durationWrapper.mobile {
@@ -484,6 +549,7 @@
                 padding: inherit;
                 border-bottom: 0;
                 transform: none;
+                font-weight: bold
             }
 
             .durationWrapper.mobile .durationSelector.active {
@@ -563,15 +629,14 @@
             }
         }
 
-
+ 
     </style>
    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
    crossorigin=""></script>
     <script type="text/javascript" src="https://gadget.open-system.fr/widgets-libs/rel/noyau-1.0.min.js"></script>
-    <script>
-        
-        const npySummerProm=[
+    <script type="text/javascript">
+const npySummerProm=[
     {
         nom:'Maison d\'Orride',
         type:'Hotels / Chambres d\'hôtes',
@@ -581,9 +646,9 @@
         pic:'maison-orride.jpg',
         lat:43.242881, 
         lng:-0.607716,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:2,
+        tarif:'80',
+        duree:'nuit',
 
     },
     {
@@ -595,9 +660,9 @@
         pic:'placeholder.jpg',
         lat:42.794963,
         lng:0.443261,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:2,
+        tarif:'80',
+        duree:'nuit',
 
     },
     {
@@ -609,12 +674,12 @@
         pic:'maison_de_peyragudes.jpg',
         lat:0,
         lng:0,
-       capacite:0,
-        tarif:'',
-        duree:'',
+       capacite:4,
+        tarif:'160',
+        duree:'semaine',
 
     },
-    {
+    /*{
         nom:'Agence pic du midi',
         type:'Appartements',
         loc:'La Mongie',
@@ -623,11 +688,11 @@
         pic:'agence_picdumidi.jpg',
         lat:0,
         lng:0,
-       capacite:0,
+       capacite:4,
         tarif:'',
         duree:'',
 
-    },
+    },*/
     {
         nom:'Hostellerie de Ramonjuan',
         type:'Hotels / Chambres d\'hôtes',
@@ -637,9 +702,9 @@
         pic:'domaine-ramonjuan.jpg',
         lat:42.988780,
         lng:0.109380,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:2,
+        tarif:'84',
+        duree:'nuit',
 
     },
     {
@@ -651,9 +716,9 @@
         pic:'meretgolf-pic.jpg',
         lat:42.910431,
         lng:0.171008,
-        capacite:0,
-        tarif:'',
-        duree:'',
+       capacite:4,
+        tarif:'99',
+        duree:'nuit',
 
 
     },
@@ -666,9 +731,9 @@
         pic:'meretgolf-tourmalet.jpg',
         lat:42.911829,
         lng:0.174001,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'67',
+        duree:'nuit',
 
     },
     {
@@ -676,29 +741,96 @@
         type:'Appartements',
         loc:'La Pierre St Martin',
         station:'Lpsm',
-        ui:'OSMB-35536',
+        ui:'OSMB-35536-1',
         pic:'residence_richelieu.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:18,
+        tarif:'1500',
+        duree:'semaine',
 
     },
     {
-        nom:'Résidence Gascogne',
+        nom:'Résidence Gascogne 1',
         type:'Appartements',
-        loc:'Gourette',
+        loc:'Eaux-Bonnes',
         station:'Gourette',
-        ui:'OSMB-108746-1',
+        ui:'OSMB-108746-2',
         pic:'residence_gascogne.jpg',
         lat:42.970744,
         lng:-0.390991,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:15,
+        tarif:'1625',
+        duree:'semaine',
 
     },
+    {
+        nom:'Résidence Gascogne 2',
+        type:'Appartements',
+        loc:'Eaux-Bonnes',
+        station:'Gourette',
+        ui:'OSMB-108746-1',
+        pic:'residence_gascogne.jpg',
+        lat:42.970658, 
+        lng:-0.391043,
+        capacite:15,
+        tarif:'1625',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Résidence Gascogne 3',
+        type:'Appartements',
+        loc:'Eaux-Bonnes',
+        station:'Gourette',
+        ui:'OSMB-108746-1',
+        pic:'residence_gascogne.jpg',
+        lat:42.970602, 
+        lng:-0.391296,
+        capacite:15,
+        tarif:'1625',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Résidence Gascogne 4',
+        type:'Appartements',
+        loc:'Eaux-Bonnes',
+        station:'Gourette',
+        ui:'OSMB-108746-1',
+        pic:'residence_gascogne.jpg',
+        lat:42.970567, 
+        lng:-0.391129,
+        capacite:15,
+        tarif:'1625',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Résidence Gascogne 5',
+        type:'Appartements',
+        loc:'Eaux-Bonnes',
+        station:'Gourette',
+        ui:'OSMB-108746-1',
+        pic:'residence_gascogne.jpg',
+        lat:42.970592, 
+        lng:-0.391023,
+        capacite:15,
+        tarif:'1625',
+        duree:'semaine',
+
+    },
+
+
+
+
+
+
+
+
+
+
+
     {
         nom:'Le Bois Joli',
         type:'Hotels / Chambres d\'hôtes',
@@ -708,9 +840,9 @@
         pic:'hotel-boisjoli.jpg',
         lat:42.888554,
         lng:-0.113872,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:2,
+        tarif:'120',
+        duree:'nuit',
 
     },
     {
@@ -722,9 +854,9 @@
         pic:'hotel-carrepy.jpg',
         lat:43.055462,
         lng: 0.157509,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:2,
+        tarif:'85',
+        duree:'nuit',
 
     },
     {
@@ -736,9 +868,9 @@
         pic:'gite_la_maisonnee.jpg',
         lat:42.884124,
         lng: -0.025394,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'94',
+        duree:'nuit',
 
     },
     {
@@ -750,9 +882,9 @@
         pic:'camping_adour.jpg',
         lat:43.052779,
         lng: 0.159368,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'275',
+        duree:'semaine',
 
     },
     {
@@ -764,9 +896,9 @@
         pic:'camping-pibeste.jpg',
         lat:43.035626, 
         lng:-0.070879,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'448',
+        duree:'semaine',
 
     },
     {
@@ -778,12 +910,12 @@
         pic:'hotel-4ours.jpg',
         lat:42.783880, 
         lng:0.159078,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:2,
+        tarif:'413',
+        duree:'semaine',
 
     },
-    {
+   /* {
         nom:'Auberge de l\'étable',
         type:'Hotels / Chambres d\'hôtes',
         loc:'Montory',
@@ -796,7 +928,7 @@
         tarif:'',
         duree:'',
 
-    },
+    },*/
     {
         nom:'Selection Agence Barroso',
         type:'Hotels / Chambres d\'hôtes',
@@ -806,12 +938,12 @@
         pic:'agence_barroso.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'307',
+        duree:'semaine',
 
     },
-    {
+    /*{
         nom:'Les Adrets',
         type:'Résidences de tourisme',
         loc:'Peyragudes',
@@ -824,9 +956,9 @@
         tarif:'',
         duree:'',
 
-    },
-    {
-        nom:'Appartement Toit',
+    },*/
+    /*{
+        nom:'Hameau de Balestas',
         type:'Résidences de tourisme',
         loc:'Peyragudes',
         station:'Peyragudes',
@@ -838,89 +970,89 @@
         tarif:'',
         duree:'',
 
-    },
+    },*/
     {
         nom:'Sélection Page Immobilier',
         type:'Appartement',
         loc:'Cauterets',
         station:'Cauterets',
-        ui:'OSMB-109565',
-        pic:'placeholder.jpg',
+        ui:'HELI-93487',
+        pic:'page_immo.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:'3 à 12',
+        tarif:'225',
+        duree:'semaine',
 
     }, 
     {
-        nom:'Agence Square Habitat Barèges',
+        nom:'Sélection Square Habitat Barèges',
         type:'Appartement',
         loc:'Barèges',
         station:'Barèges',
         ui:'HELI-69350',
-        pic:'placeholder.jpg',
+        pic:'square_bareges.jpg',
         lat:0,
         lng:0,
         capacite:0,
-        tarif:'',
+        tarif:'381',
         duree:'',
 
     },
     {
-        nom:'Agence Square Habitat La Mongie',
+        nom:'Sélection Square Habitat La Mongie',
         type:'Appartement',
         loc:'La Mongie',
         station:'La Mongie',
         ui:'HELI-69285',
-        pic:'placeholder.jpg',
+        pic:'square_lamongie.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:6,
+        tarif:'381',
+        duree:'semaine',
 
     },
     {
-        nom:'Agence Square Habitat Luz',
+        nom:'Sélection Square Habitat Luz',
         type:'Appartement',
         loc:'Luz',
         station:'Luz',
         ui:'HELI-69352',
-        pic:'placeholder.jpg',
+        pic:'square_luz.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'315',
+        duree:'semaine',
 
     },
     {
-        nom:'Agence Square Habitat Cauterets',
+        nom:'Sélection Square Habitat Cauterets',
         type:'Appartement',
         loc:'Cauterets',
         station:'Cauterets',
         ui:'HELI-69351',
-        pic:'placeholder.jpg',
+        pic:'square_cauterets.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'381',
+        duree:'semaine',
 
     },
     {
-        nom:'Agence Square Habitat Gourette',
+        nom:'Sélection Square Habitat Gourette',
         type:'Appartement',
         loc:'Gourette',
         station:'Gourette',
         ui:'HELI-69353',
-        pic:'placeholder.jpg',
+        pic:'square_gourette.jpg',
         lat:0,
         lng:0,
-        capacite:0,
-        tarif:'',
-        duree:'',
+        capacite:4,
+        tarif:'290',
+        duree:'semaine',
 
     },
     
@@ -2090,8 +2222,8 @@
 
 ];
     </script>
-    <script>
-let npyIdIntegration = "1331";
+    <script type="text/javascript">
+        let npyIdIntegration = "1331";
 let npyIdPanier = "VRpVVVU";
 let npyUi = "OSCH-72613";
 window.langue = "fr";
@@ -2179,10 +2311,10 @@ function filterItemsByResort(choix, pers) {
         let npyMapUi = createdItems[i].dataset.lgmt;
         let capacite = createdItems[i].dataset.cap;
 
-        let itemLocsPrice = `<div class="price"><p><span>${prix}€</span> par ${duree}</p></div>`
-        let itemLocsLieu = `<div class="cont_grid_baseline lieu"><img src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyPin.png"/><b>${loc}</b></div>`;
-        let itemLocsType = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyMaison.png" /><b>${type}</b></div>`;
-        let itemLocsCap = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyPers.png" /><b>${capacite} Pers. Max</b></div>`;
+        let itemLocsPrice = `<div class="price"><p><span class="npyFrom">À partir de</span><br><span>${prix}€</span> par ${duree}</p></div>`
+        let itemLocsLieu = `<div class="cont_grid_baseline lieu"><img src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyPin2.png"/><b>${loc}</b></div>`;
+        let itemLocsType = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyMaison2.png" /><b>${type}</b></div>`;
+        let itemLocsCap = `<div class="cont_grid_baseline type"><img alt="" src="https://www.n-py.com/sites/n-py/files/commons/0_ICONES/npyPerson2.png" /><b>${capacite} Pers. Max</b></div>`;
         
         let itemLocsNodePrice = document.createElement('div');
         let itemLocsNodeLieu = document.createElement('div');
@@ -2201,7 +2333,7 @@ function filterItemsByResort(choix, pers) {
 
         createdImages[i].src = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image;
 
-    //Creation des POIS ssur la map et centrage
+    //Creation des POIS ssur la map et centrage ICI ESSAYER DE CONVERTIR EN STRING
         if (lat==='0' && lng==='0'){
 
             }
@@ -2210,7 +2342,7 @@ function filterItemsByResort(choix, pers) {
               let markerImgSrc = ('https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image).toString();
               let markerLinkUrl = ('https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + npyMapUi).toString();
               marker.bindPopup();
-              marker.setPopupContent(`<p><img class="npyMapImg" src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/`+ image + `"></p><p><b>${type}</b><br>${loc}<br>${capacite} Pers. max</p><p><a class="npyMapCta" href="${markerLinkUrl}">En savoir +</a></p>`);
+              marker.setPopupContent(`<p><img id="npyMapImg" data-url="${npyMapUi}" data-img="${image}" src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/placeholder.jpg"></p><p><b>${type}</b><br>${loc}<br>${capacite} Pers. max</p><p><a class="npyMapCta" id="npyMapCta" >En savoir +</a></p>`);
               markersLayer.push(marker); 
               mapBounds.push([lat,lng]);
 
@@ -2245,13 +2377,27 @@ function filterItemsByResort(choix, pers) {
 
 
 //Remplissage img popups    
-    createdMarkers.forEach(marker => marker.addEventListener('click', function(){
+    createdMarkers.forEach(marker => marker.addEventListener('click', function(e){
     console.log(this.dataset.img);
     console.log(this.dataset.lgmt);
-        
+
        }));
     
+    createdMarkers.forEach(marker => marker.addEventListener('click', function(e){
+    setTimeout(delayIt,1000);
 
+       }));
+
+
+    //
+
+    function delayIt(e){
+        let imageBubble = document.querySelector('#npyMapImg');
+        let linkBubble = document.querySelector('#npyMapCta');
+        imageBubble.src = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + imageBubble.dataset.img;
+        linkBubble.href = 'https://www.n-py.com/fr/reservation?_wos=v2%2Cu%2C' + imageBubble.dataset.url;
+
+        }
 
 //Logique métier au clic sur les éléments
     createdItems.forEach(element => element.addEventListener("click", function (e) {
