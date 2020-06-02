@@ -48,7 +48,7 @@ body {
             background: #fff !important;
         }
 
-        /*==SELECTEUR==*/
+        /*==SELECTEUR STATION==*/
 
         .durationWrapper.desktop {
             border-bottom: 1px solid var(--grey);
@@ -81,6 +81,62 @@ body {
         .durationWrapper div:hover {
             cursor: pointer;
             font-weight: bold;
+        }
+
+        /*=== SELECTEUR PERSONNES ===*/
+
+        .durationWrapper div:hover{
+        cursor:pointer;
+        font-weight: bold
+        }
+
+        .peopleWrapper{
+            display:inline-block;
+        }
+
+        .numberSelector, .score{
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+
+        .numberSelector{
+            margin:25px auto;
+        }
+        .profile{
+            width: 180px;
+        }
+
+        .plus, .moins {
+            background:var(--salmon);
+            height: 30px;
+            width:30px;
+            border-radius: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color:#fff;
+            font-weight:bold;
+            margin:0px 8px;
+        }
+
+        .plus:hover, .moins:hover{
+            background:var(--blue);
+            transform: scale(1.1);
+            transition: 0.3s;
+            cursor:pointer;
+        }
+
+
+
+        .score{
+            box-shadow: var(--shadow-white);
+            width:50px;
+            height:50px;
+            border-radius: 5px;
+            font-size:1.2em;
+            font-weight:bold;
         }
 
         /*=== INTRO ===*/

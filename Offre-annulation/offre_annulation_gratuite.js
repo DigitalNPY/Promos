@@ -4,7 +4,12 @@ let npyUi = "OSCH-72613";
 window.langue = "fr";
 
 const resortButtons = Array.from(document.querySelectorAll('.durationSelector'));
-let nbPers = 0;
+const adultPlus = document.getElementById('adultPlus');
+const adultScore = document.getElementById('adultScore');
+const adultMoins = document.getElementById('adultMoins');
+
+
+let nbPers = 1;
 let chosenResort = 'all';
 
 
@@ -45,7 +50,7 @@ function filterItemsByResort(choix, pers) {
     for (var i = 0; i < npySummerProm.length; i++) {
 
 //creation des items   
-        if ((npySummerProm[i].station) === choix || choix === 'all') {
+        if (((npySummerProm[i].station) === choix || choix === 'all')&&((npySummerProm[i].capacite) >= pers)) {
             let npyUrl = npySummerProm[i].ui;
             let nom = npySummerProm[i].nom;
             let npyBackground = npySummerProm[i].pic;
@@ -207,23 +212,39 @@ function filterItemsByResort(choix, pers) {
 
 
 //Scroll au clic
-function scrollToElement(element) {
-    window.scroll({
-        behavior: 'smooth',
-        left: 0,
-        // top gets the distance from the top of the page of our target element
-        top: document.getElementById(element).offsetTop
+    function scrollToElement(element) {
+        window.scroll({
+            behavior: 'smooth',
+            left: 0,
+            // top gets the distance from the top of the page of our target element
+            top: document.getElementById(element).offsetTop
+        });
+    };
+
+//Definition Station
+    resortButtons.forEach(element => element.addEventListener('click', function (e) {
+        chosenResort = this.dataset.resort;
+        for (var i = 0; i < resortButtons.length; i++) {
+            resortButtons[i].classList.remove('active');
+        }
+        this.classList.add('active');
+        filterItemsByResort(chosenResort,nbPers);
+        mymap.setView([this.dataset.lat, this.dataset.long], 10);
+
+    }));
+
+
+//Definition nombre de personnes
+    adultPlus.addEventListener('click', function(){
+        nbPers++;
+        adultScore.innerHTML=nbPers;
+        filterItemsByResort(chosenResort,nbPers);
     });
-};
 
-//Definition Duree
-resortButtons.forEach(element => element.addEventListener('click', function (e) {
-    chosenResort = this.dataset.resort;
-    for (var i = 0; i < resortButtons.length; i++) {
-        resortButtons[i].classList.remove('active');
-    }
-    this.classList.add('active');
-    filterItemsByResort(chosenResort);
-    mymap.setView([this.dataset.lat, this.dataset.long], 10);
-
-}));
+    adultMoins.addEventListener('click', function(){
+        if(nbPers!=0){
+            nbPers--;
+            adultScore.innerHTML=nbPers;
+            filterItemsByResort(chosenResort,nbPers);
+        } else{}
+    });
