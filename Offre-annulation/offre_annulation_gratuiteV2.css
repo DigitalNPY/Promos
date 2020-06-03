@@ -48,6 +48,14 @@ body {
             background: #fff !important;
         }
 
+
+        /*=== BANNER===*/
+
+        .mainBanner{
+            max-width:80%;
+            height:auto;
+        }
+
         /*==SELECTEUR STATION==*/
 
         .durationWrapper.desktop {
@@ -462,6 +470,11 @@ body {
         }
 
         @media screen and (max-width: 900px) {
+            
+            .textPrez{
+                width:80%;
+            }
+
             .durationWrapper.desktop {
                 display: none;
 

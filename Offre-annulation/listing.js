@@ -14,19 +14,114 @@ const npySummerProm=[
 
     },
     {
-        nom:'Flocons du soleil',
+        nom:'Chalet Aster 1',
         type:'Appartement',
         loc:'Peyragudes',
         station:'Peyragudes',
-        ui:'OSMB-64622',
-        pic:'placeholder.jpg',
-        lat:42.794963,
-        lng:0.443261,
+        ui:'OSMB-64622-1',
+        pic:'aster_2.jpg',
+        lat:42.790480,
+        lng: 0.446673,
         capacite:2,
-        tarif:'80',
-        duree:'nuit',
+        tarif:'320',
+        duree:'semaine',
 
     },
+    {
+        nom:'Chalet Aster 2',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-64622-6',
+        pic:'aster_2.jpg',
+        lat:42.790451,
+        lng:0.446671,
+        capacite:12,
+        tarif:'680',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Chalet Aster 3',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-64622-7',
+        pic:'aster_3.jpg',
+        lat:42.790498,
+        lng:0.446631,
+        capacite:7,
+        tarif:'320',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Chalet Aster 4',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-64622-5',
+        pic:'aster_4.jpg',
+        lat:42.790459,
+        lng:0.446663,
+        capacite:7,
+        tarif:'320',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Chalet Aster 5',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-64622-3',
+        pic:'aster_5.jpg',
+        lat:42.790429, 
+        lng:0.446639,
+        capacite:15,
+        tarif:'680',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Chalet Aster 6',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-64622-8',
+        pic:'aster_6.jpg',
+        lat:42.790392,
+        lng:0.446695,
+        capacite:15,
+        tarif:'680',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Chalet Aster 7',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-64622-7',
+        pic:'aster_7.jpg',
+        lat:42.790410, 
+        lng:0.446607,
+        capacite:14,
+        tarif:'680',
+        duree:'semaine',
+
+    },
+    
+
+
+
+
+
+
+
+
+
+
     {
         nom:'Maison de Peyragudes',
         type:'Appartements',

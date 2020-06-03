@@ -1,8 +1,7 @@
-
 <div class="npy_fullWidthBg">
     <div class="page-content-npy">
-        <section class="cont_row" style="text-align:center">
-            <img src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/title2.jpg" alt="Cet été, on vous couvre">
+           <section class="cont_row" style="text-align:center">
+            <img class="mainBanner" src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/title2.jpg" alt="Cet été, on vous couvre">
             <h2>Réservez votre séjour pour cet été avec l&#39;esprit libre !</h2>
             <div class="npyReassurWrapper">
                 <div class="npy_reassurance"><img src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/flex2.png">Offre <b>flex</b></div>
@@ -85,6 +84,16 @@
                 </ul>
             </div>
         </section>
+        <section>
+            <div class="peopleWrapper">
+                <div class="numberSelector">
+                    <div class="profile">Nombre de personnes</div>
+                    <div class="plus" id="adultMoins">-</div>
+                    <div class="score" id="adultScore">1</div>
+                    <div class="moins" id="adultPlus">+</div>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
 <div class="npy_fullWidthBg">
@@ -106,10 +115,8 @@
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
     <style type="text/css">
-     
 
-
-:root {
+    :root {
             --red: #fb236a;
             --blue: #003d7b;
             --salmon: #ff6f5d;
@@ -142,7 +149,15 @@
             background: #fff !important;
         }
 
-        /*==SELECTEUR==*/
+
+        /*=== BANNER===*/
+
+        .mainBanner{
+            max-width:80%;
+            height:auto;
+        }
+
+        /*==SELECTEUR STATION==*/
 
         .durationWrapper.desktop {
             border-bottom: 1px solid var(--grey);
@@ -177,11 +192,67 @@
             font-weight: bold;
         }
 
+        /*=== SELECTEUR PERSONNES ===*/
+
+        .durationWrapper div:hover{
+        cursor:pointer;
+        font-weight: bold
+        }
+
+        .peopleWrapper{
+            display:inline-block;
+        }
+
+        .numberSelector, .score{
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+
+        .numberSelector{
+            margin:25px auto;
+        }
+        .profile{
+            width: 180px;
+        }
+
+        .plus, .moins {
+            background:var(--salmon);
+            height: 30px;
+            width:30px;
+            border-radius: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color:#fff;
+            font-weight:bold;
+            margin:0px 8px;
+        }
+
+        .plus:hover, .moins:hover{
+            background:var(--blue);
+            transform: scale(1.1);
+            transition: 0.3s;
+            cursor:pointer;
+        }
+
+
+
+        .score{
+            box-shadow: var(--shadow-white);
+            width:50px;
+            height:50px;
+            border-radius: 5px;
+            font-size:1.2em;
+            font-weight:bold;
+        }
+
         /*=== INTRO ===*/
 
         .textPrez{
             max-width:60%;
-            margin: auto;
+            margin:auto;
         }
 
         /*=== PARAMETRAGE ROWS FULLWIDTH===*/
@@ -215,6 +286,11 @@
             background: #f7f5f5;
             padding: 80px 0px;
         }
+
+        .widgetContainer h2{
+            text-align: center;
+        }
+
 
         /*=== REASSURANCE===*/
 
@@ -495,12 +571,10 @@
         }
 
         @media screen and (max-width: 900px) {
-           
-             .textPrez{
-            max-width:80%;
             
-            }   
-
+            .textPrez{
+                width:80%;
+            }
 
             .durationWrapper.desktop {
                 display: none;
@@ -629,14 +703,13 @@
             }
         }
 
- 
     </style>
    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
    crossorigin=""></script>
     <script type="text/javascript" src="https://gadget.open-system.fr/widgets-libs/rel/noyau-1.0.min.js"></script>
-    <script type="text/javascript">
-const npySummerProm=[
+    <script>
+        const npySummerProm=[
     {
         nom:'Maison d\'Orride',
         type:'Hotels / Chambres d\'hôtes',
@@ -652,19 +725,114 @@ const npySummerProm=[
 
     },
     {
-        nom:'Flocons du soleil',
+        nom:'Chalet Aster 1',
         type:'Appartement',
         loc:'Peyragudes',
         station:'Peyragudes',
-        ui:'OSMB-64622',
-        pic:'placeholder.jpg',
-        lat:42.794963,
-        lng:0.443261,
+        ui:'OSMB-64622-1',
+        pic:'aster_2.jpg',
+        lat:42.790480,
+        lng: 0.446673,
         capacite:2,
-        tarif:'80',
-        duree:'nuit',
+        tarif:'320',
+        duree:'semaine',
 
     },
+    {
+        nom:'Chalet Aster 2',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-64622-6',
+        pic:'aster_2.jpg',
+        lat:42.790451,
+        lng:0.446671,
+        capacite:12,
+        tarif:'680',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Chalet Aster 3',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-64622-7',
+        pic:'aster_3.jpg',
+        lat:42.790498,
+        lng:0.446631,
+        capacite:7,
+        tarif:'320',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Chalet Aster 4',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-64622-5',
+        pic:'aster_4.jpg',
+        lat:42.790459,
+        lng:0.446663,
+        capacite:7,
+        tarif:'320',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Chalet Aster 5',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-64622-3',
+        pic:'aster_5.jpg',
+        lat:42.790429, 
+        lng:0.446639,
+        capacite:15,
+        tarif:'680',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Chalet Aster 6',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-64622-8',
+        pic:'aster_6.jpg',
+        lat:42.790392,
+        lng:0.446695,
+        capacite:15,
+        tarif:'680',
+        duree:'semaine',
+
+    },
+    {
+        nom:'Chalet Aster 7',
+        type:'Appartement',
+        loc:'Peyragudes',
+        station:'Peyragudes',
+        ui:'OSMB-64622-7',
+        pic:'aster_7.jpg',
+        lat:42.790410, 
+        lng:0.446607,
+        capacite:14,
+        tarif:'680',
+        duree:'semaine',
+
+    },
+    
+
+
+
+
+
+
+
+
+
+
     {
         nom:'Maison de Peyragudes',
         type:'Appartements',
@@ -739,8 +907,8 @@ const npySummerProm=[
     {
         nom:'Résidence Richelieu',
         type:'Appartements',
-        loc:'La Pierre St Martin',
-        station:'Lpsm',
+        loc:'Barèges',
+        station:'Tourmalet',
         ui:'OSMB-35536-1',
         pic:'residence_richelieu.jpg',
         lat:0,
@@ -2210,25 +2378,22 @@ const npySummerProm=[
     },
 
 
-
-
-
-
-
-
-
-    
-
-
 ];
     </script>
-    <script type="text/javascript">
+    <script>
         let npyIdIntegration = "1331";
 let npyIdPanier = "VRpVVVU";
 let npyUi = "OSCH-72613";
 window.langue = "fr";
 
 const resortButtons = Array.from(document.querySelectorAll('.durationSelector'));
+const adultPlus = document.getElementById('adultPlus');
+const adultScore = document.getElementById('adultScore');
+const adultMoins = document.getElementById('adultMoins');
+
+
+let nbPers = 1;
+let chosenResort = 'all';
 
 
 //change class from "promo" to "offer_annul"
@@ -2268,7 +2433,7 @@ function filterItemsByResort(choix, pers) {
     for (var i = 0; i < npySummerProm.length; i++) {
 
 //creation des items   
-        if ((npySummerProm[i].station) === choix || choix === 'all') {
+        if (((npySummerProm[i].station) === choix || choix === 'all')&&((npySummerProm[i].capacite) >= pers)) {
             let npyUrl = npySummerProm[i].ui;
             let nom = npySummerProm[i].nom;
             let npyBackground = npySummerProm[i].pic;
@@ -2430,25 +2595,41 @@ function filterItemsByResort(choix, pers) {
 
 
 //Scroll au clic
-function scrollToElement(element) {
-    window.scroll({
-        behavior: 'smooth',
-        left: 0,
-        // top gets the distance from the top of the page of our target element
-        top: document.getElementById(element).offsetTop
+    function scrollToElement(element) {
+        window.scroll({
+            behavior: 'smooth',
+            left: 0,
+            // top gets the distance from the top of the page of our target element
+            top: document.getElementById(element).offsetTop
+        });
+    };
+
+//Definition Station
+    resortButtons.forEach(element => element.addEventListener('click', function (e) {
+        chosenResort = this.dataset.resort;
+        for (var i = 0; i < resortButtons.length; i++) {
+            resortButtons[i].classList.remove('active');
+        }
+        this.classList.add('active');
+        filterItemsByResort(chosenResort,nbPers);
+        mymap.setView([this.dataset.lat, this.dataset.long], 10);
+
+    }));
+
+
+//Definition nombre de personnes
+    adultPlus.addEventListener('click', function(){
+        nbPers++;
+        adultScore.innerHTML=nbPers;
+        filterItemsByResort(chosenResort,nbPers);
     });
-};
 
-//Definition Duree
-resortButtons.forEach(element => element.addEventListener('click', function (e) {
-    let chosenResort = this.dataset.resort;
-    for (var i = 0; i < resortButtons.length; i++) {
-        resortButtons[i].classList.remove('active');
-    }
-    this.classList.add('active');
-    filterItemsByResort(chosenResort);
-    mymap.setView([this.dataset.lat, this.dataset.long], 10);
-
-}));
+    adultMoins.addEventListener('click', function(){
+        if(nbPers!=0){
+            nbPers--;
+            adultScore.innerHTML=nbPers;
+            filterItemsByResort(chosenResort,nbPers);
+        } else{}
+    });
     </script>
     <link href="https://www.n-py.com/sites/n-py/files/commons/2017-2018/css/npy-elements.css" rel="stylesheet" type="text/css" />
