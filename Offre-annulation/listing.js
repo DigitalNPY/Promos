@@ -101,8 +101,8 @@ const npySummerProm=[
     {
         nom:'Résidence Richelieu',
         type:'Appartements',
-        loc:'La Pierre St Martin',
-        station:'Lpsm',
+        loc:'Barèges',
+        station:'Tourmalet',
         ui:'OSMB-35536-1',
         pic:'residence_richelieu.jpg',
         lat:0,
