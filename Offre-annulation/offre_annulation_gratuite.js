@@ -115,7 +115,7 @@ function filterItemsByResort(choix, pers) {
 
         createdImages[i].src = 'https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image;
 
-    //Creation des POIS ssur la map et centrage ICI ESSAYER DE CONVERTIR EN STRING
+    //Creation des POIS ssur la map et centrage 
         if (lat==='0' && lng==='0'){
 
             }
@@ -124,7 +124,7 @@ function filterItemsByResort(choix, pers) {
               let markerImgSrc = ('https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + image).toString();
               let markerLinkUrl = ('https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/' + npyMapUi).toString();
               marker.bindPopup();
-              marker.setPopupContent(`<p><img id="npyMapImg" data-url="${npyMapUi}" data-img="${image}" src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/placeholder.jpg"></p><p><b>${type}</b><br>${loc}<br>${capacite} Pers. max</p><p><a class="npyMapCta" id="npyMapCta" >En savoir +</a></p>`);
+              marker.setPopupContent(`<p><img id="npyMapImg" data-url="${npyMapUi}" data-img="${image}" src="https://www.n-py.com/sites/n-py/files/commons/2020-2021/Ete/Offre_annulation_gratuite/placeholder.jpg"></p><p><b>${type}</b><br>${loc}<br>${capacite} Pers. max</p><p><a class="npyMapCta" target="_blank" id="npyMapCta" >En savoir +</a></p>`);
               markersLayer.push(marker); 
               mapBounds.push([lat,lng]);
 
@@ -180,7 +180,8 @@ function filterItemsByResort(choix, pers) {
 
         let res = npyUi.substring(0, 4);
         if (res === 'OSMB') {
-            location.href = `https://www.n-py.com/fr/reservation?_wos=v2%2Cu%2C${npyUi}`;
+            window.open(`https://www.n-py.com/fr/reservation?_wos=v2%2Cu%2C${npyUi}`, '_blank');
+            
 
         } else {
             let npyNom = this.dataset.titre;
