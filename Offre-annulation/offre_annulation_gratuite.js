@@ -41,7 +41,7 @@ filterItemsByResort('all',0);
 
 function filterItemsByResort(choix, pers) {
 
-//Reinitialisation de la carte et des blocs
+    //Reinitialisation de la carte et des blocs
     npyWrapper.innerHTML = '';
     for (var i = 0; i < markersLayer.length; i++) {
          mymap.removeLayer(markersLayer[i]);
@@ -49,7 +49,7 @@ function filterItemsByResort(choix, pers) {
     
     for (var i = 0; i < npySummerProm.length; i++) {
 
-//creation des items   
+    //creation des items   
         if (((npySummerProm[i].station) === choix || choix === 'all')&&((npySummerProm[i].capacite) >= pers)) {
             let npyUrl = npySummerProm[i].ui;
             let nom = npySummerProm[i].nom;
@@ -64,7 +64,7 @@ function filterItemsByResort(choix, pers) {
             let npyLng =npySummerProm[i].lng;
 
 
-            //delete class "cont_grid4"
+    //delete class "cont_grid4"
             let item = `<div class="lgmt" data-prix="${npyPrix}" data-duree="${npyDuree}" data-cap="${npyCap}" data-lat="${npyLat}" data-lng="${npyLng}" data-resort="${npyStation}" data-img="${npyBackground}" data-lgmt="${npyUrl}" data-titre="${nom}" data-type="${npyType}" data-loc="${npyLoc}"><div class="cont_grid_item"><div class="cont_grid_img"><img class="npyImage" /></div><div class="cont_grid_text"><h3 class="cont_title cont_title3">${nom}</h3></div></div></div>`;
             let textnode = document.createElement('div');
             textnode.innerHTML = item;
@@ -160,18 +160,10 @@ function filterItemsByResort(choix, pers) {
 
 //Remplissage img popups    
     createdMarkers.forEach(marker => marker.addEventListener('click', function(e){
-    console.log(this.dataset.img);
-    console.log(this.dataset.lgmt);
-
-       }));
-    
-    createdMarkers.forEach(marker => marker.addEventListener('click', function(e){
     setTimeout(delayIt,1000);
 
        }));
 
-
-    //
 
     function delayIt(e){
         let imageBubble = document.querySelector('#npyMapImg');
