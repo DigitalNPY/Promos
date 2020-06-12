@@ -733,7 +733,7 @@ const npySummerProm=[
         duree:'nuit',
     },
     {
-        nom:'Michele S.',
+        nom:'Appartement centre ville - Jardin privatif & vue degagée',
         type:'Appartement',
         loc:'Cauterets',
         station:'Cauterets',
@@ -876,7 +876,7 @@ const npySummerProm=[
         duree:'semaine',
     },
     {
-        nom:'Chantal D.',
+        nom:'Appartement 4 pers. 2 chambres',
         type:'Appartement',
         loc:'Cauterets',
         station:'Cauterets',
@@ -889,7 +889,7 @@ const npySummerProm=[
         duree:'semaine',
     },
     {
-        nom:'Christophe D.',
+        nom:'Appart. 67m2 - Centre ville - 2 chambres',
         type:'Appartement',
         loc:'Cauterets',
         station:'Cauterets',
@@ -1123,7 +1123,7 @@ const npySummerProm=[
         duree:'nuit',
     },
     {
-        nom:'Eric & Marie D.',
+        nom:'Appart. centre ville avec sauna - 2 chambres',
         type:'Appartement',
         loc:'Cauterets',
         station:'Cauterets',
@@ -1357,7 +1357,7 @@ const npySummerProm=[
         duree:'nuit',
     },
     {
-        nom:'Jean Michel C.',
+        nom:'Studio 2-3 pers. centre ville tout confort - Centre Ville ',
         type:'Appartement',
         loc:'Cauterets',
         station:'Cauterets',
