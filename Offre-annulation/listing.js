@@ -777,7 +777,7 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-9',
-        pic:'maisondomer.jpg',
+        pic:'maisondomer_lab.jpg',
         lat:42.886800, 
         lng:-0.113727,
         capacite:7,
@@ -790,7 +790,7 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-6',
-        pic:'maisondomer2.jpg',
+        pic:'maisondomer2_lab.jpg',
         lat:42.886800, 
         lng:-0.113728,
         capacite:6,
@@ -803,7 +803,7 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-7',
-        pic:'maisondomer3.jpg',
+        pic:'maisondomer3_lab.jpg',
         lat:42.886800, 
         lng:-0.113729,
         capacite:7,
@@ -816,7 +816,7 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-10',
-        pic:'maisondomer4.jpg',
+        pic:'maisondomer4_lab.jpg',
         lat:42.886800, 
         lng:-0.113730,
         capacite:7,
@@ -829,7 +829,7 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-8',
-        pic:'maisondomer5.jpg',
+        pic:'maisondomer5_lab.jpg',
         lat:42.886800, 
         lng:-0.113731,
         capacite:4,
@@ -842,7 +842,7 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-4',
-        pic:'meuble_domer.jpg',
+        pic:'meuble_domer_lab.jpg',
         lat:42.886800, 
         lng:-0.113732,
         capacite:8,
@@ -855,7 +855,7 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35698-1',
-        pic:'meuble_domer2.jpg',
+        pic:'meuble_domer2_lab.jpg',
         lat:42.886800, 
         lng:-0.113733,
         capacite:6,
@@ -894,7 +894,7 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-63759-1',
-        pic:'apptchristophed.jpg',
+        pic:'apptchristophed_lab.jpg',
         lat:42.887409, 
         lng:-0.113220,
         capacite:7,
@@ -1128,7 +1128,7 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-90291-1',
-        pic:'appt_ericmaried.jpg',
+        pic:'appt_ericmaried_lab.jpg',
         lat:42.889746, 
         lng:-0.115991,
         capacite:6,
@@ -1206,7 +1206,7 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-101074-1',
-        pic:'maisondevacs_estrelias.jpg',
+        pic:'maisondevacs_estrelias_lab.jpg',
         lat:42.893193, 
         lng:-0.117409,
         capacite:10,
@@ -1609,7 +1609,7 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35729-4',
-        pic:'les-arroques.jpg',
+        pic:'les-arroques_lab.jpg',
         lat:42.891247,
         lng:-0.110866,
         capacite:7,
@@ -1622,7 +1622,7 @@ const npySummerProm=[
         loc:'Cauterets',
         station:'Cauterets',
         ui:'OSMB-35729-1',
-        pic:'le-mayouret.jpg',
+        pic:'le-mayouret_lab.jpg',
         lat:42.891247,
         lng:-0.110866,
         capacite:6,
@@ -1956,16 +1956,6 @@ const npySummerProm=[
         tarif:'240',
         duree:'semaine',
     },
-
-
-
-
-
-
-
-
-
-    
-
+ 
 
 ];
